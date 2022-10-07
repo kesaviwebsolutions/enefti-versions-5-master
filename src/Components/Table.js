@@ -85,29 +85,29 @@ TablePaginationActions.propTypes = {
   rowsPerPage: PropTypes.number.isRequired,
 };
 
-function createData(name, calories, fat) {
-  return { name, calories, fat };
+function createData(fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10) {
+  return {fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10};
 }
 
 const rows = [
-  createData("Gingerbread", 3, 16.0),
-  createData("Gingerbread", 3, 16.0),
-  createData("Gingerbread", 3, 16.0),
-  createData("Gingerbread", 3, 16.0),
-  createData("Gingerbread", 3, 16.0),
-  createData("Honeycomb", 4, 3.2),
-  createData("Ice cream sandwich", 7, 9.0),
-  createData("Jelly Bean", 5, 0.0),
-  createData("KitKat", 8, 26.0),
-  createData("Lollipop", 2, 0.2),
-  createData("Marshmallow", 3, 0),
-  createData("Nougat", 0, 19.0),
-  createData("Oreo", 7, 18.0),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10),
+  createData(1,2,3,4,5,6,7,8,9,10)
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
@@ -131,38 +131,40 @@ export default function CustomPaginationActionsTable() {
             : rows
           ).map((row) => (
             <TableRow key={row.name}>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.calories}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-              <TableCell style={{ width: 80 }} align="center">
-                {row.fat}
-              </TableCell>
-            </TableRow>
-          ))}
+           
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat1}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat2}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat3}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat4}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat5}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat6}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat7}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat8}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat9}
+            </TableCell>
+            <TableCell style={{ width: 100 }} align="right">
+              {row.fat10}
+            </TableCell>
+          
+          </TableRow>
+        ))}
 
           {emptyRows > 0 && (
             <TableRow style={{ height: 53 * emptyRows }}>
@@ -173,7 +175,7 @@ export default function CustomPaginationActionsTable() {
         <TableFooter>
           <TableRow>
             <TablePagination
-              rowsPerPageOptions={[5, 10, 15, { label: "All", value: -1 }]}
+              rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
               colSpan={10}
               count={rows.length}
               rowsPerPage={rowsPerPage}
