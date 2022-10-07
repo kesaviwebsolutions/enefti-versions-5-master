@@ -85,29 +85,29 @@ TablePaginationActions.propTypes = {
   rowsPerPage: PropTypes.number.isRequired,
 };
 
-function createData(fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10) {
-  return {fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10};
+function createData(fat1,fat2,fat3,fat4,fat5,fat6) {
+  return {fat1,fat2,fat3,fat4,fat5,fat6};
 }
 
 const rows = [
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10)
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6),
+  createData(1,2,3,4,5,6)
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(7);
 
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
@@ -118,14 +118,14 @@ export default function CustomPaginationActionsTable() {
   };
 
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
+    setRowsPerPage(parseInt(event.target.value, 6));
     setPage(0);
   };
 
   return (
-    <div className="table-desktop">
+    <div className="table-mobile">
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
+      <Table sx={{ minWidth:500}} aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
@@ -133,36 +133,25 @@ export default function CustomPaginationActionsTable() {
           ).map((row) => (
             <TableRow key={row.name}>
            
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat1}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat2}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat3}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat4}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat5}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
+            <TableCell  align="center">
               {row.fat6}
             </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat7}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat8}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat9}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat10}
-            </TableCell>
+       
           
           </TableRow>
         ))}
@@ -176,8 +165,8 @@ export default function CustomPaginationActionsTable() {
         <TableFooter>
           <TableRow>
             <TablePagination
-              rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
-              colSpan={10}
+              rowsPerPageOptions={[7, 10, 25, { label: "All", value: -1 }]}
+              colSpan={6}
               count={rows.length}
               rowsPerPage={rowsPerPage}
               page={page}

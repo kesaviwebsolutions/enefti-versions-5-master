@@ -72,7 +72,7 @@
   }
   
   @media screen and (max-width: 750px) {
-    .Table {
+    .table-desktop {
       display: none;
     }
     .video {
@@ -80,26 +80,13 @@
     }
   }
   @media screen and (min-width: 750px) {
-    .Table-mobile {
+    .table-mobile {
       display: none;
     }
-    .table {
-      height: 39rem;
-      float: right;
-    }
-    .Table {
-      max-height: 41rem !important;
-      overflow: auto;
-    }
+
   }
   
-  .Table-mobile {
-    width: 85% !important;
-    height: 19rem;
-    margin-top: 0 !important;
-    width: 26rem !important;
-    border: 1px solid black;
-  }
+
   .minted {
     font-weight: 900 !important;
     font-size: 24px !important;
@@ -166,4 +153,25 @@
   }
   svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagination-selectIcon.MuiNativeSelect-iconStandard.css-10bey84-MuiSvgIcon-root-MuiNativeSelect-icon{
       fill:white !important;
+  }
+  .table-mobile{
+    float: left !important;
+    margin: 1rem auto !important;
+
+  }
+  .css-130xbax-MuiTable-root{
+    min-width: 400px !important;
+  }
+  @media screen and (max-width:750px) {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+        margin: 2rem auto !important;
+        float: left !important;
+        margin-left: 10px !important;
+      }
+      .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+        width: 90% !important;
+    }
+    .css-130xbax-MuiTable-root{
+        min-width: 350px !important;
+      }
   }
