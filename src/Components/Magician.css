@@ -1,0 +1,64 @@
+.button-magi{
+    background: rgb(88, 101, 242);
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 18px 48px;
+    border-radius: 100px;
+    border: none;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.head-magi{
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+    
+}
+.magi-para{
+    color: #c3c3c3;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.magi-section{
+    background:#0A0A0A !important;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.magi-button{
+    text-align: end;
+}
+@media screen and (max-width:412px) {
+    .magi-button{
+        /* margin-left: 10px; */
+    text-align: center;
+    }
+    .head-magi{
+        text-align: center;
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .button-magi{
+        margin-left: 30px;
+    }
+    
+}
+@media screen and (max-width:414px) {
+    .button-magi{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:320px) {
+    .button-magi{
+        margin-left: 9px;
+    }
+}
+@media screen and (max-width:768px) {
+    .button-magi{
+      padding: 21px 20px;
+    }
+}

@@ -1,0 +1,24 @@
+.nav-section{
+    background: #000;
+    border-top: 2px solid #fff;
+}
+.navbar-brand{
+    color: #fff !important;
+}
+.nav-link{
+    color: #fff !important;
+}
+.nav-link.active{
+    color: #fff !important;
+}
+.btn-2{
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-2:hover{
+    color: #838181 !important;
+}
+.navbar-nav{
+    margin-left: 150px;
+}
