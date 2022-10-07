@@ -22,3 +22,19 @@
 .navbar-nav{
     margin-left: 150px;
 }
+@media screen and (max-width:1320px) {
+    .navbar-brand{
+        margin-left: -60px;
+    }
+    .navbar-nav{
+        margin-right: -80px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .navbar-brand{
+        margin-left: -4px !important;
+    }
+    .navbar-nav{
+        margin-right: -25px;
+    }
+}

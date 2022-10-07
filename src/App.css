@@ -78,7 +78,12 @@
 }
 @media screen and (max-width:540px) {
   .heading{
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    width: 100%;
+    font-size: 15px;
+  }
+  .nav-content{
+    justify-content: left;
   }
   
 }

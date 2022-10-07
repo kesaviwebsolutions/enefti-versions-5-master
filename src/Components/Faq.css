@@ -50,6 +50,15 @@ color: #fff;
         margin-left: 42px;
         padding-top: 40px;
     }
+    .faq-heading{
+        text-align: center;
+    }
+}
+@media screen and (max-width:912px) {
+    .faq-heading{
+        text-align: center;
+    }
+    
 }
 @media screen and (max-width:412px) {
     .faq-image{

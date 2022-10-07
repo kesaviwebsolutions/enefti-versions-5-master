@@ -118,7 +118,7 @@ export default function Holders() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container12">
         <div className="faq-icons">
           <div className="icon">
             <img src={Icon1} alt="" />

@@ -35,12 +35,17 @@
     .holder-image{
         padding-top: 20px;
     }
+    .holder-heading{
+        text-align: center;
+    }
 }
 @media screen and (max-width:912px) {
     .holder-image{
         padding-bottom: 20px;
-        
     }    
+    .holder-heading{
+        text-align: center;
+    }
 }
 @media screen and (max-width:320px) {
     .holder-image{

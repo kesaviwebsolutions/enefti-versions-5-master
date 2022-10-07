@@ -30,3 +30,13 @@ span.vertical-timeline-element-icon.bounce-in{
     font-weight: 400;
     color:#ffffff;
 }
+@media screen and (max-width:540px) {
+    .timeline-head{
+        text-align: center;
+    } 
+}
+@media screen and (max-width:912px) {
+    .timeline-head{
+        text-align: center;
+    } 
+}

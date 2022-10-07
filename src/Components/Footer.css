@@ -21,7 +21,7 @@
     
 }
 .footer-bot{
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
     padding-bottom: 20px;
 }
 .footer-section{
@@ -98,6 +98,7 @@ ul {
 @media screen and (max-width:375px) {
     .footer-para{
         text-align: left;
+        margin-left: 15px !important;
     } 
 }
 @media screen and (max-width:414px) {
@@ -115,9 +116,7 @@ ul {
         text-align: left;
         margin: 10px !important;
     }
-    
 }
-
 .h5-footer{
     margin-left: 15px;
     color: #fff;
