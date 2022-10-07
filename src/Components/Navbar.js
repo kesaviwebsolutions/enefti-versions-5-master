@@ -5,9 +5,9 @@ import Navimage from "../Images/logo.svg";
 export default function Navbar() {
   return (
     <section className="nav-section">
-      <div className="container-fluid">
+      <div className="container12">
         <nav className="navbar navbar-expand-lg ">
-          <div className="container-fluid">
+          <div className="container">
             <a className="navbar-brand" href="#">
               <img src={Navimage} alt="" />
             </a>

@@ -99,7 +99,9 @@ color: #fff;
     .faq-heading{
         text-align: center;
     }
-    
+    .faq-image{
+        margin-left: 10px;
+    } 
 }
 @media screen and (max-width:375px) {
     .faq-heading{

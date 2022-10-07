@@ -8,7 +8,7 @@ import Icon3 from "../Images/Main-Client6.png";
 export default function Holders() {
   return (
     <section style={{ background: "#000000", color: "#fff" }}>
-      <div className="container-fluid">
+      <div className="container12">
         <div className="row">
           <h1 className="faq-heading">FAQ</h1>
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -118,25 +118,25 @@ export default function Holders() {
           </div>
         </div>
       </div>
-      <div className="container-fluid">
-        <div className="faq-icons" >
+      <div className="container">
+        <div className="faq-icons">
           <div className="icon">
-            <img src={Icon1} alt=""  />
+            <img src={Icon1} alt="" />
           </div>
           <div className="icon">
-            <img src={Icon2} alt=""  />
+            <img src={Icon2} alt="" />
           </div>
           <div className="icon">
-            <img src={Icon3} alt=""  />
+            <img src={Icon3} alt="" />
           </div>
           <div className="icon">
-            <img src={Icon1} alt=""  />
+            <img src={Icon1} alt="" />
           </div>
           <div className="icon">
-            <img src={Icon2} alt=""  />
+            <img src={Icon2} alt="" />
           </div>
           <div className="icon">
-            <img src={Icon3} alt=""  />
+            <img src={Icon3} alt="" />
           </div>
         </div>
       </div>

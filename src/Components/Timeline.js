@@ -7,7 +7,7 @@ function Timeline() {
   return (
    <>
    <div style={{backgroundColor:"#E9EDF3"}}>
-   <div className="container-fluid">
+   <div className="container12">
 <div className='row' >
 <h1 className='timeline-head' >THE ROADMAP</h1>  
 </div>

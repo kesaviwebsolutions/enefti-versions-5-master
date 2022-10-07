@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Raleway&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:wght@200;300&family=Raleway&family=Roboto&display=swap');
+.row{
+  --bs-gutter-x: 0rem !important;
+}
+.container12{
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (max-width:1320px) and (min-width:750px) {
+  .container12{
+    width: 98%;
+  }
+}
+@media screen and (max-width:425px) {
+  .container12{
+    width: 100%;
+    text-align: center;
+  }
+  .heading{
+    font-size: 15px !important;
+    margin-left: 0px !important;
+  }
+  .nav-content{
+    justify-content:initial!important;
+}
+  .btn-1{
+    padding: 10px 10px !important;
+  }
+  
+}
 .nav-content{
   display: flex;
   justify-content: space-between;
@@ -37,9 +66,7 @@
   color: #fff !important;
   border-radius: 5px;
 }
-/* .main-header1{
-  margin-left: -20px;
-} */
+
 @media screen and (max-width:412px) {
   .main-header1{
     margin-left: -20px;
@@ -77,6 +104,12 @@
 @media screen and (max-width:390px) {
   .heading{
     text-align: center;
+  }
+  
+}
+@media screen and (max-width:320px) {
+  .main-header1{
+    margin-left: 10px;
   }
   
 }

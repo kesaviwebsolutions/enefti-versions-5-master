@@ -9,7 +9,7 @@ export default function Main() {
       <div className="">
           {/* <img src={Mainbackground} alt="" /> */}
       </div>
-      <div className="container-fluid">
+      <div className="container12">
         <div className="row">
           <div>
             
