@@ -1,10 +1,10 @@
-.video{
+.video {
     width: 85%;
     height: 25rem;
     display: block;
     margin: 2rem auto 1rem !important;
-}
-.text23{
+  }
+  .text23 {
     margin: 1rem auto;
     display: block;
     width: 26rem;
@@ -13,114 +13,157 @@
     color: black;
     font-size: 20px;
     padding: 0px 20px;
-}
-input,
-input::placeholder {
+  }
+  input,
+  input::placeholder {
     font-size: 13px;
     color: #9a9a9a;
     margin: 0;
-}
-
-.waring{
+  }
+  
+  .waring {
     text-align: center !important;
-    color:  red;
+    color: red;
     padding-right: 0px;
     margin-top: 0px;
-}
-
-.button1{
+  }
+  
+  .button1 {
     display: block;
     margin: 1rem auto;
     border: none;
     background-color: #a6bcdc;
     color: white;
-    color: #0064F0;
+    color: #0064f0;
     width: 26rem;
     font-weight: 800;
     border-radius: 10px;
     height: 3rem;
-}
-.button2{
+  }
+  .button2 {
     display: block;
     margin: 1rem auto;
     border: none;
-    background-color: #0064F0;
+    background-color: #0064f0;
     color: white;
-    /* color: #0064F0; */
+  
     width: 26rem;
     font-weight: 800;
     border-radius: 10px;
     height: 3rem;
     margin-bottom: 4rem;
-}
-
-td{
+  }
+  
+  td {
     border-top: 1px solid white !important;
-}
-table{
-   
-    width: 70% !important;
-    margin:2rem auto;
-    text-align: center;
-    color:white;
-}
-table, th, td {
+  }
+  /* table{
+     
+      width: 70% !important;
+      margin:2rem auto;
+      text-align: center;
+      color:white;
+  } */
+  table,
+  th,
+  td {
     border: 1px solid white;
     border-collapse: collapse;
   }
-
-
-@media screen and (max-width:750px) {
-    .Table{
-display: none;
+  
+  @media screen and (max-width: 750px) {
+    .Table {
+      display: none;
     }
-    .video{
-        margin-left: 46px !important;
+    .video {
+      margin-left: 46px !important;
     }
-}
-@media screen and (min-width:750px) {
-    .Table-mobile{
-display: none;
-
+  }
+  @media screen and (min-width: 750px) {
+    .Table-mobile {
+      display: none;
     }
-    .table{
-        height: 39rem;
-        float: right;
+    .table {
+      height: 39rem;
+      float: right;
     }
-    .Table{
-        max-height: 41rem !important;
-    overflow: auto;
+    .Table {
+      max-height: 41rem !important;
+      overflow: auto;
     }
-}
-
-
-.Table-mobile{
+  }
+  
+  .Table-mobile {
     width: 85% !important;
     height: 19rem;
     margin-top: 0 !important;
     width: 26rem !important;
-    border:1px solid black;
-}
-.minted{
+    border: 1px solid black;
+  }
+  .minted {
     font-weight: 900 !important;
     font-size: 24px !important;
-}
-.table-minted{
+  }
+  .table-minted {
     border: 1px solid black;
-}
-
-
-@media screen and (max-width:500px) {
-    .text23, .button1, .button2{
-        width: 85%;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .text23,
+    .button1,
+    .button2 {
+      width: 85%;
     }
-    .Table-mobile{
-        width:85% !important;
+    .Table-mobile {
+      width: 85% !important;
     }
   
     input,
-input::placeholder {
-    font-size: 11px;
-    color: #9a9a9a;
-}
-}
+    input::placeholder {
+      font-size: 11px;
+      color: #9a9a9a;
+    }
+  }
+  
+  .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    width: 80% !important;
+  }
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    margin-top: 2rem !important;
+    float: right;
+  }
+  td {
+    text-align: center !important;
+  }
+  td {
+  color: #fff !important;
+    border-radius: 50%;
+    border: none !important;
+    padding: 10px !important;
+  }
+  .css-fikjyc-MuiTableCell-root-MuiTablePagination-root:last-child {
+    background-color: transparent !important;
+    border-radius: 0%;
+    border: none !important;
+    width: 5rem;
+  }
+  .css-130xbax-MuiTable-root {
+    background-color: #445c75;
+    /* border: none !important; */
+    color: white !important;
+  }
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+    color: white !important;
+  }
+  .css-i4bv87-MuiSvgIcon-root{
+      fill: white !important;
+  }
+  .css-levciy-MuiTablePagination-displayedRows{
+      margin-top: 1rem !important;
+  }
+  .css-pdct74-MuiTablePagination-selectLabel{
+      margin-top: 1rem !important;
+  }
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagination-selectIcon.MuiNativeSelect-iconStandard.css-10bey84-MuiSvgIcon-root-MuiNativeSelect-icon{
+      fill:white !important;
+  }

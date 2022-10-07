@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Nft.css";
 // import logo from "./logo2.gif";
 import { Button } from "bootstrap";
+import Table from "./Table";
 // import {mintforpublic, batchmintforpublic, GetChainId, ETHrecover, batchmintforadmin} from "./../../Web3/Web3"
 // import toast, { Toaster } from "react-hot-toast";
 // import axios from "axios";
@@ -33,7 +34,7 @@ const id = "63382cdc3171dfd5d7715948"
 function Nft(){
   return (
     <>
-    <div style={{backgroundColor:"#1A2F39"}}>
+    <div style={{backgroundColor:"#445C75"}}>
     <div>
         <marquee style={{color:'red'}}>Input NFT number you wish to mint. If you are minting multiple then put all the numbers separated by a comma.</marquee>
     </div>
@@ -61,7 +62,7 @@ function Nft(){
       <div className="row" >
      
       <div className="col-lg-6 col-md-6 col-sm-12 col-12 Table">
-      <table>
+  {/*     <table>
         <thead>
           <tr>
             <th>Minted NFTs</th>
@@ -93,8 +94,12 @@ function Nft(){
         <tr><td>12</td></tr>
         <tr><td>12</td></tr>
         <tr><td>12</td></tr>
-      </table>
+      </table> */}
 
+<Table/>
+
+
+      
       {/* <TableContainer component={Paper} className="table table-minted">
       <Table sx={{ minWidth: 100 }} aria-label="simple table">
         <TableHead  className="minted" >
