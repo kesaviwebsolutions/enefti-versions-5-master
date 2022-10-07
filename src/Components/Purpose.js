@@ -8,7 +8,7 @@ import './Purpose.css';
 export default function Purpose() {
   return (
     <section style={{background:'#0A0A0A'}}>
-        <div className='container'>
+        <div className="container-fluid">
             <h1 className='pop-heading'>Our Purpose</h1>
             <div className='row'>
                 <div className='col-lg-4 col-md-4 col-sm-12 col-12' style={{textAlign:'center'}}>

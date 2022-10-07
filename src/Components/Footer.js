@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                 <p className="footer-para-1">Copyright by ModelTheme. All Rights Reserved.</p>

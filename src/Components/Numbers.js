@@ -7,7 +7,7 @@ export default function Numbers() {
     <section>
      
       <div className="number-image">
-        <div className="container">
+        <div className="container-fluid">
         {/* <img src={Main} alt='' className="number-image"/> */}
           <h1 className="num-he" >Our Numbers</h1>
           <div className="row our-num">
