@@ -7,7 +7,7 @@ import './Purpose.css';
 
 export default function Purpose() {
   return (
-    <section style={{background:'#0A0A0A'}}>
+    <section style={{background:'#0A0A0A'}} id="purpose">
         <div className="container12">
             <h1 className='pop-heading'>Our Purpose</h1>
             <div className='row'>

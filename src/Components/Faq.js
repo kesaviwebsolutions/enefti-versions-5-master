@@ -7,7 +7,7 @@ import Icon3 from "../Images/Main-Client6.png";
 
 export default function Holders() {
   return (
-    <section style={{ background: "#000000", color: "#fff" }}>
+    <section style={{ background: "#000000", color: "#fff" }} id="faq">
       <div className="container12">
         <div className="row">
           <h1 className="faq-heading">FAQ</h1>

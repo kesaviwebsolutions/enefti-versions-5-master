@@ -8,6 +8,7 @@ export default function Footer() {
     <section
       style={{ background: "#000000", color: "#fff" }}
       className="footer-section"
+      id="footer"
     >
       <div className="container12 footer-bot">
         <div className="row footer">
