@@ -3,6 +3,7 @@ import "./Nft.css";
 // import logo from "./logo2.gif";
 import { Button } from "bootstrap";
 import Table from "./Table";
+import TableMobile from "./TableMobile";
 // import {mintforpublic, batchmintforpublic, GetChainId, ETHrecover, batchmintforadmin} from "./../../Web3/Web3"
 // import toast, { Toaster } from "react-hot-toast";
 // import axios from "axios";
@@ -153,8 +154,8 @@ function Nft(){
         </div>
     <div>
             <div container spacing={2}>
-          <div item xs={12} sm={12} md={6} xl={6} style={{margin:"0 auto"}}>
-             
+          <div item xs={12} sm={12} md={12} xl={12} style={{margin:"0 auto"}}>
+             <TableMobile />
             </div>
             </div> 
     </div>
