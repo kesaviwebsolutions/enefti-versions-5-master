@@ -30,15 +30,22 @@ span.vertical-timeline-element-icon.bounce-in{
     font-weight: 400;
     color:#ffffff;
 }
+.image-roadmap{
+    width: 54px;
+}
 @media screen and (max-width:540px) {
     .timeline-head{
         text-align: center;
     } 
+  
 }
 @media screen and (max-width:912px) {
     .timeline-head{
         text-align: center;
     } 
+    .image-roadmap{
+        width: 37px !important;
+    }
 }
 @media screen and (max-width:1276px) {
     .timeline-head{

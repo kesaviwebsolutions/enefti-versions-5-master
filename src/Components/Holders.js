@@ -25,7 +25,7 @@ export default function Holders() {
                 </h2>
                 <div
                   id="collapseOne"
-                  className="accordion-collapse collapse show"
+                  class="accordion-collapse collapse show"
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >

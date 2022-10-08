@@ -20,7 +20,7 @@ function Timeline() {
     contentArrowStyle={{ borderRight: '7px solid black' }}
     date="2011 - present"
     iconStyle={{ background: 'black', color: '#fff' }}
-    icon=<img src={icon22} alt='' style={{    width: "54px"}} />
+    icon=<img src={icon22} alt='' className='image-roadmap' />
     
   >
   <h1 className="vertical-timeline-element-title" style={{color:"#C91078"}}>Q1 2022</h1>
@@ -45,7 +45,7 @@ function Timeline() {
   contentArrowStyle={{ borderRight: '7px solid  black' }}
   date="2011 - present"
   iconStyle={{ background: 'black', color: '#fff' }}
-  icon=<img src={icon22} alt='' style={{    width: "54px"}} />
+  icon=<img src={icon22} alt='' className='image-roadmap' />
   
 >
 <h1 className="vertical-timeline-element-title" style={{color:"#C91078"}}>Q1 2022</h1>
@@ -70,7 +70,7 @@ contentStyle={{ background: 'black', color: '#fff' }}
 contentArrowStyle={{ borderRight: '7px solid  black' }}
 date="2011 - present"
 iconStyle={{ background: 'black', color: '#fff' }}
-icon=<img src={icon22} alt='' style={{    width: "54px"}} />
+icon=<img src={icon22} alt='' className='image-roadmap' />
 
 >
 <h1 className="vertical-timeline-element-title" style={{color:"#C91078"}}>Q1 2022</h1>

@@ -75,9 +75,9 @@
     .table-desktop {
       display: none;
     }
-    .video {
+    /* .video {
       margin-left: 46px !important;
-    }
+    } */
   }
   @media screen and (min-width: 750px) {
     .table-mobile {
@@ -176,9 +176,33 @@
       }
   }
   .css-7yoqta{
-    width: 80%;
-    float: right;
+    width: 80% !important;
+    float: right !important;
   }
   .css-13xy2my{
     background-color: #445C75;
+  }
+  .css-13xy2my {
+    background-color: #445C75 !important;
+  }
+  .css-1hcle96{
+    width: 82% !important;
+    float: right !important;
+    margin-top: 2rem !important;
+  }
+  .css-1hcle96{
+    margin-right: 2rem !important;
+  }
+  
+  .css-1yxmbwk {
+    color: white !important;
+  }
+  .css-1utq5rl{
+    fill: white !important;
+  }
+  .css-1chpzqh {
+    margin-top: 1rem !important;
+  }
+  .css-13xy2my{
+    box-shadow: none !important;
   }
