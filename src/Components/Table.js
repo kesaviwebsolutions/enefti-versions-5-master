@@ -85,24 +85,35 @@ TablePaginationActions.propTypes = {
   rowsPerPage: PropTypes.number.isRequired,
 };
 
-function createData(fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10) {
-  return {fat1,fat2,fat3,fat4,fat5,fat6,fat7,fat8,fat9,fat10};
+function createData(
+  fat1,
+  fat2,
+  fat3,
+  fat4,
+  fat5,
+  fat6,
+  fat7,
+  fat8,
+  fat9,
+  fat10
+) {
+  return { fat1, fat2, fat3, fat4, fat5, fat6, fat7, fat8, fat9, fat10 };
 }
 
 const rows = [
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10),
-  createData(1,2,3,4,5,6,7,8,9,10)
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -124,77 +135,75 @@ export default function CustomPaginationActionsTable() {
 
   return (
     <div className="table-desktop">
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 300 }} aria-label="custom pagination table">
-        <TableBody>
-          {(rowsPerPage > 0
-            ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-            : rows
-          ).map((row) => (
-            <TableRow key={row.name}>
-           
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat1}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat2}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat3}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat4}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat5}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat6}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat7}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat8}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat9}
-            </TableCell>
-            <TableCell style={{ width: 100 }} align="center">
-              {row.fat10}
-            </TableCell>
-          
-          </TableRow>
-        ))}
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 300 }} aria-label="custom pagination table">
+          <TableBody>
+            {(rowsPerPage > 0
+              ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              : rows
+            ).map((row) => (
+              <TableRow key={row.name}>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat1}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat2}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat3}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat4}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat5}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat6}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat7}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat8}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat9}
+                </TableCell>
+                <TableCell style={{ width: 100 }} align="center">
+                  {row.fat10}
+                </TableCell>
+              </TableRow>
+            ))}
 
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
+            {emptyRows > 0 && (
+              <TableRow style={{ height: 53 * emptyRows }}>
+                <TableCell colSpan={6} />
+              </TableRow>
+            )}
+          </TableBody>
+          <TableFooter>
+            <TableRow>
+              <TablePagination
+                rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
+                colSpan={10}
+                count={rows.length}
+                rowsPerPage={rowsPerPage}
+                page={page}
+                SelectProps={{
+                  inputProps: {
+                    "aria-label": "rows per page",
+                  },
+                  native: true,
+                }}
+                onPageChange={handleChangePage}
+                onRowsPerPageChange={handleChangeRowsPerPage}
+                ActionsComponent={TablePaginationActions}
+              />
             </TableRow>
-          )}
-        </TableBody>
-        <TableFooter>
-          <TableRow>
-            <TablePagination
-              rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
-              colSpan={10}
-              count={rows.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              SelectProps={{
-                inputProps: {
-                  "aria-label": "rows per page",
-                },
-                native: true,
-              }}
-              onPageChange={handleChangePage}
-              onRowsPerPageChange={handleChangeRowsPerPage}
-              ActionsComponent={TablePaginationActions}
-            />
-          </TableRow>
-        </TableFooter>
-      </Table>
-    </TableContainer>
+          </TableFooter>
+        </Table>
+      </TableContainer>
     </div>
   );
 }

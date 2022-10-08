@@ -10,7 +10,7 @@ export default function Footer() {
       className="footer-section"
       id="footer"
     >
-      <div className="container12 footer-bot">
+      <div className="container-fluid footer-bot">
         <div className="row footer">
           <div className="col-lg-3 col-md-3 col-sm-12 col-12">
             <h4 className="head1">Our Address</h4>
@@ -115,18 +115,18 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-section">
-      <div className="container12 ">
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-            <p className="footer-para-1">
-              Copyright by ModelTheme. All Rights Reserved.
-            </p>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-            <p className="footer-para">Elite Author on ThemeForest.</p>
+        <div className="container12 ">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+              <p className="footer-para-1">
+                Copyright by ModelTheme. All Rights Reserved.
+              </p>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+              <p className="footer-para">Elite Author on ThemeForest.</p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   );
