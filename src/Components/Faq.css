@@ -45,6 +45,12 @@ color: #fff;
 .faq-heading{
     padding-top: 80px;
 }
+@media screen and (max-width:1276px) {
+    .faq-heading{
+        padding-left: 15px !important;
+    }
+    
+}
 @media screen and (max-width:540px) {
     .faq-image{
         margin-left: 42px;

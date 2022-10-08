@@ -24,10 +24,10 @@
 }
 @media screen and (max-width:1320px) {
     .navbar-brand{
-        margin-left: -60px;
+        margin-left: -48px;
     }
     .navbar-nav{
-        margin-right: -80px;
+        margin-right: -70px;
     }
 }
 @media screen and (max-width:1024px) {

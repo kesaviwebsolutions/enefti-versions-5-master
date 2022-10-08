@@ -9,7 +9,7 @@
 }
 @media screen and (max-width:1320px) and (min-width:750px) {
   .container12{
-    width: 98%;
+    width: 100%;
   }
 }
 @media screen and (max-width:425px) {

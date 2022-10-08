@@ -40,3 +40,9 @@ span.vertical-timeline-element-icon.bounce-in{
         text-align: center;
     } 
 }
+@media screen and (max-width:1276px) {
+    .timeline-head{
+        padding-left: 15px !important;
+    }
+    
+}

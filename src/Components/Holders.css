@@ -31,6 +31,16 @@
 .holder-heading{
     padding-top: 50px;
 }
+@media screen and (max-width:1276px) {
+    .accordion{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .holder-heading{
+        padding-left: 15px !important;
+    }
+    
+}
 @media screen and (max-width:540px) {
     .holder-image{
         padding-top: 20px;
