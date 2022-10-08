@@ -27,7 +27,7 @@ function App() {
       <Purpose/>
       <Numbers/>
       <Holders/>
-{/*       <Timeline /> */}
+      <Timeline />
       <Faq/>
       <Footer/>
     </div>
