@@ -220,7 +220,7 @@
     border-radius: 30px;
     font-weight: 800;
     font-family: Raleway;
-    margin:2rem;
+
   }
   .title1{
     color:white;
@@ -232,4 +232,13 @@
     font-weight: 800;
     font-family: Raleway;
     margin: 1rem;
+  }
+  
+  .css-ebg7sp{
+    width: 80% !important;
+    float: right;
+    margin-top: 3rem !important;
+  }
+  .css-13xy2my {
+    background-color: #010001 !important;
   }

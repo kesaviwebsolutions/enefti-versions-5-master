@@ -101,7 +101,7 @@ function createData(
 }
 
 const rows = [
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
   // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
   // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
   // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
@@ -134,7 +134,7 @@ export default function CustomPaginationActionsTable() {
   };
 
   return (
-    <div className="table-desktop">
+    <div className="table-desktop" style={{backgroundColor:"#000000"}}>
     <div >
     <span className="title">Already Minted Nft</span></div>
       <TableContainer component={Paper}>
@@ -190,7 +190,7 @@ export default function CustomPaginationActionsTable() {
           <TableFooter>
             <TableRow>
               <TablePagination
-                rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
+                rowsPerPageOptions={[5, 10, 15, { label: "All", value: -1 }]}
                 colSpan={10}
                 count={rows.length}
                 rowsPerPage={rowsPerPage}
