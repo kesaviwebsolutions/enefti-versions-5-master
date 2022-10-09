@@ -1,60 +1,54 @@
-.num-head{
-    font-size: 60px;
-    line-height: 86px;
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
-}
-.num-para{
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    font-family: "Raleway", sans-serif;
-}
-.num-he{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: "Raleway", sans-serif;
-}
-.our-num{
-    text-align: center;
-}
-@media screen and (max-width:390px) {
-    .our-num{
-        text-align: center;
-    }
-    
-}
-@media screen and (max-width:414px) {
-    .our-num{
-        text-align: center;
-    }
-    
-}
-@media screen and (max-width:540px) {
-    .our-num{
-        text-align: center;
-    }
- 
-    
-}
-@media screen and (max-width:800px) {
-    
-    .navbar-nav {
-         margin-left: 0px !important;
-    }
-    .number-count{
-        padding-bottom: 2rem;
-    }
-    
+.num-head {
+  font-size: 60px;
+  line-height: 86px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
 }
 
+.num-para {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+.num-he {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+}
+.our-num {
+  text-align: center;
+}
+@media screen and (max-width: 390px) {
+  .our-num {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .our-num {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  .our-num {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-nav {
+    margin-left: 0px !important;
+  }
+  .number-count {
+    padding-bottom: 2rem;
+  }
+}
 
-@media screen and (min-width:800px) {
-    
-    .number-image{
-        color: #fff;
-            background-image: url("../Images/main1.jpg");
-        }
-    
+@media screen and (min-width: 800px) {
+  .number-image {
+    color: #fff;
+    background-image: url("../Images/main1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
