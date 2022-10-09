@@ -37,7 +37,7 @@ function Nft(){
     <>
     <div style={{backgroundColor:"black"}}>
     <div>
-        <marquee style={{color:'red'}}>Input NFT number you wish to mint. If you are minting multiple then put all the numbers separated by a comma.</marquee>
+        <marquee style={{color:'white'}}>Input NFT number you wish to mint. If you are minting multiple then put all the numbers separated by a comma.</marquee>
     </div>
     <div
           item
