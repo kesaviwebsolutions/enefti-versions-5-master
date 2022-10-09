@@ -129,7 +129,7 @@ function Nft(){
       <div className="row">
         <div>
           <video loop autoPlay muted className="video">
-            <source src={require("../Images/Video24.mp4")} type="video/mp4" />
+            <source src={require("../Images/Video23.mp4")} type="video/mp4" />
           </video>
         </div>
         </div>

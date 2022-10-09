@@ -24,7 +24,7 @@ function Navbar1() {
               style={{ background: "#fff" }}
             />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto nav-content" id="navbarSupportedContent">
+              <Nav className="ms-auto" id="navbarSupportedContent">
                 <Nav.Link href="#home">
                   {" "}
                   <a className="nav-link active" aria-current="page" href="#">

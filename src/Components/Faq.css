@@ -28,11 +28,14 @@
     }
     
 }
-.number-image{
-color: #fff;
-    background-image: url("../Images/main.jpg");
-   
-}
+/* @media screen and (min-width:700px) {
+    .number-image{
+        color: #fff;
+            background-image: url("../Images/main.jpg");
+           
+        }
+} */
+
 .faq-image{
     width: 80%;
     border-radius: 100%;

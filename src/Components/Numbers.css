@@ -45,7 +45,13 @@
     }
     
 }
-.number-image{
-color: #fff;
-    background-image: url("../Images/main.jpg");
+
+
+@media screen and (min-width:800px) {
+    
+    .number-image{
+        color: #fff;
+            background-image: url("../Images/main.jpg");
+        }
+    
 }
