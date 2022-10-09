@@ -41,6 +41,7 @@ color: #fff;
 .faq-icons{
     padding-top: 80px;
     padding-bottom: 50px;
+    text-align: center !important;
 }
 .faq-heading{
     padding-top: 80px;
@@ -92,6 +93,7 @@ color: #fff;
 @media screen and (min-width:700px) {
     .faq-icons{
         display: flex;
+        margin-left: 1rem;
     }
 
     .faq-icons img{

@@ -101,19 +101,19 @@ function createData(
 }
 
 const rows = [
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -135,8 +135,13 @@ export default function CustomPaginationActionsTable() {
 
   return (
     <div className="table-desktop">
+    <div >
+    <span className="title">Already Minted Nft</span></div>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 300 }} aria-label="custom pagination table">
+        <Table
+          sx={{ minWidth: 300, background: "#000" }}
+          aria-label="custom pagination table"
+        >
           <TableBody>
             {(rowsPerPage > 0
               ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)

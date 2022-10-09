@@ -35,7 +35,7 @@ const id = "63382cdc3171dfd5d7715948"
 function Nft(){
   return (
     <>
-    <div style={{backgroundColor:"#445C75"}}>
+    <div style={{backgroundColor:"black"}}>
     <div>
         <marquee style={{color:'red'}}>Input NFT number you wish to mint. If you are minting multiple then put all the numbers separated by a comma.</marquee>
     </div>
@@ -129,7 +129,7 @@ function Nft(){
       <div className="row">
         <div>
           <video loop autoPlay muted className="video">
-            <source src={require("../Images/Video23.mp4")} type="video/mp4" />
+            <source src={require("../Images/Video24.mp4")} type="video/mp4" />
           </video>
         </div>
         </div>

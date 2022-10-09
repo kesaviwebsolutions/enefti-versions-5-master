@@ -149,3 +149,10 @@ ul {
     color: #cccccc;
     font-weight: 500;
 }
+.footer2{
+    margin: 0 auto;
+    width: 95%;
+}
+ul li a:hover{
+    color:white !important;
+}

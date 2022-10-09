@@ -120,22 +120,22 @@ export default function Holders() {
       </div>
       <div className="container12">
         <div className="faq-icons">
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon1} alt="" />
           </div>
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon2} alt="" />
           </div>
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon3} alt="" />
           </div>
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon1} alt="" />
           </div>
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon2} alt="" />
           </div>
-          <div className="icon">
+          <div className="icon col-lg-2 col-md-2 col-sm-2 col-4">
             <img src={Icon3} alt="" />
           </div>
         </div>

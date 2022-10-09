@@ -124,6 +124,9 @@ export default function CustomPaginationActionsTable() {
 
   return (
     <div className="table-mobile">
+    <div style={{textAlign:"center"}}>
+    <span className="title1">Already Minted Nft</span>
+    </div>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth:300}} aria-label="custom pagination table">
         <TableBody>
