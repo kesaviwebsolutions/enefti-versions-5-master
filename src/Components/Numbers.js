@@ -4,7 +4,7 @@ import "./Numbers.css";
 
 export default function Numbers() {
   return (
-    <section style={{backgroundColor:"#0A0A0A",color:"white",paddingBottom:"2rem"}}>
+    <section className="number-count" style={{backgroundColor:"#0A0A0A",color:"white"}}>
       <div className="number-image">
         <div className="container-fluid">
           {/* <img src={Main} alt='' className="number-image"/> */}
