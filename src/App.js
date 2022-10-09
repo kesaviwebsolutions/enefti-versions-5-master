@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Headernav from './Components/Headernav';
-import Navbar from './Components/Navbar';
+
 import Magician from './Components/Magician';
 import Purpose from './Components/Purpose';
 import Numbers from './Components/Numbers';
@@ -13,12 +13,13 @@ import Footer from './Components/Footer';
 // import Toyslider from "./Components/Toyslider";
 import Timeline from "./Components/Timeline";
 import Nft from './Components/Nft';
+import Navbar1 from './Components/Navbar1';
 
 function App() {
   return (
     <div className="App">
       <Headernav/>
-      <Navbar/>
+      <Navbar1/>
       <Nft/>
       {/* <Slider /> */}
       {/* <Main/> */}
