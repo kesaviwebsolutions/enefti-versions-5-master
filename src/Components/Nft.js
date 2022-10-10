@@ -75,7 +75,9 @@ function Nft() {
                 margin: "1rem 0rem",
               }}
             >
-              Time left{" "}
+            <div style={{textAlign:"center"}}>
+            <span className="time">time left</span>
+            </div>
             </div>
           </div>
         </div>
