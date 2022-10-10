@@ -223,13 +223,13 @@ export default function CustomPaginationActionsTable() {
           </TableFooter>
         </Table>
       </TableContainer> */}
-  <div style={{    backgroundColor:"black",marginTop:"2rem",float:"right"}}>
+  <div style={{    backgroundColor:"black",marginTop:"4rem",float:"right"}}>
       <div
         style={{
           maxWidth: "600px",
           maxHeight: "400px",
  
-          padding: "20px 0rem",
+          padding: "0px 0rem",
           overflow:"auto",
           margin:"0 auto",
           color:"white"
