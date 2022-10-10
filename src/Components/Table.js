@@ -16,6 +16,14 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import LastPageIcon from "@mui/icons-material/LastPage";
 
+
+const tableinfo = [];
+
+for (let i = 1; i <= 500; i++) {
+  tableinfo.push(i);
+}
+console.log(tableinfo);
+
 function TablePaginationActions(props) {
   const theme = useTheme();
   const { count, page, rowsPerPage, onPageChange } = props;
@@ -35,6 +43,8 @@ function TablePaginationActions(props) {
   const handleLastPageButtonClick = (event) => {
     onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
+
+
 
   return (
     <Box sx={{ flexShrink: 0, ml: 2.5 }}>
@@ -101,19 +111,23 @@ function createData(
 }
 
 const rows = [
-  createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-  // createData(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+  createData(1),
+
+
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -137,7 +151,7 @@ export default function CustomPaginationActionsTable() {
     <div className="table-desktop" style={{backgroundColor:"#000000"}}>
     <div style={{paddingTop:"2rem"}}>
     <span className="title">Already Minted Nft</span></div>
-      <TableContainer component={Paper}>
+   {/*    <TableContainer component={Paper}>
         <Table
           sx={{ minWidth: 300, background: "#000" }}
           aria-label="custom pagination table"
@@ -208,7 +222,26 @@ export default function CustomPaginationActionsTable() {
             </TableRow>
           </TableFooter>
         </Table>
-      </TableContainer>
+      </TableContainer> */}
+  <div style={{    backgroundColor:"black",marginTop:"2rem",float:"right"}}>
+      <div
+        style={{
+          maxWidth: "600px",
+          maxHeight: "400px",
+ 
+          padding: "20px 0rem",
+          overflow:"auto",
+          margin:"0 auto",
+          color:"white"
+        }}
+      >
+      <div className="row">
+        {tableinfo.map((res) => {
+          return <div className="col-lg-1 col-md-1 col-sm-1 col-1" style={{width:"50px",height:"24px",display:"flex",border:"0.1px solid white",textAlign:"center"}}>&nbsp;{res}&nbsp; </div>
+        })}
+        </div>
+      </div>
+      </div>
     </div>
   );
 }
