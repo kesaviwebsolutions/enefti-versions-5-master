@@ -254,3 +254,8 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
     font-family: Raleway;
   }
 }
+@media screen and (min-width:1350px) {
+  .title{
+    margin-left: 22rem !important;
+  }
+}

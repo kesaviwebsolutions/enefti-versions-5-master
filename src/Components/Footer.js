@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-lg-4 col-md-12">
-            <div className="footer-address-area2">
+            <div className="footer-address-area2 useful-link">
               <h4>Useful Links</h4>
               <ul>
                 <li className="li">
@@ -48,7 +48,7 @@ export default function Footer() {
                 <BsTwitter size={28} className="mx-4" />
                 <FaFacebookF size={28} className="mx-4" />
                 <FaLinkedinIn size={28} className="mx-4" />
-                <FaInstagramSquare size={28} className="mx-4" />
+                <FaInstagramSquare size={28} className="" style={{marginLeft:"1.5rem"}} />
               </div>
             </div>
           </div>

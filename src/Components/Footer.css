@@ -160,3 +160,11 @@ ul li a {
 ul li a:hover {
   color: white !important;
 }
+@media screen and (min-width:992px) {
+  .useful-link{
+    margin-left: 9rem !important;
+  }
+  .footer-sociallinks{
+    float: right;
+  }
+}
