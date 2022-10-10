@@ -1,32 +1,30 @@
-.num-head{
-    font-size: 60px;
-    line-height: 86px;
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
+.num-head {
+  font-size: 60px;
+  line-height: 86px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
 }
-.num-para{
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    font-family: "Raleway", sans-serif;
+.num-para {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
 }
-.num-he{
+.num-he {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (max-width: 390px) {
+  .our-num {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: "Raleway", sans-serif;
+  }
 }
-@media screen and (max-width:390px) {
-    .our-num{
-        text-align: center;
-    }
-    
-}
-@media screen and (max-width:414px) {
-    .our-num{
-        text-align: center;
-    }
-    
+@media screen and (max-width: 414px) {
+  .our-num {
+    text-align: center;
+  }
 }
 /* @media screen and (min-width:700px) {
     .number-image{
@@ -36,96 +34,90 @@
         }
 } */
 
-.faq-image{
+.faq-image {
+  width: 80%;
+  border-radius: 100%;
+  margin-left: 90px;
+}
+.faq-icons {
+  text-align: center !important;
+}
+/* .faq-heading{
+    padding-top: 80px;
+} */
+@media screen and (max-width: 1276px) {
+  .faq-heading {
+    padding-left: 15px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .faq-image {
+    margin-left: 42px;
+    padding-top: 40px;
+  }
+  .faq-heading {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 912px) {
+  .faq-heading {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 412px) {
+  .faq-image {
+    margin-left: 40px;
+    /* padding-top: 40px; */
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-image {
+    margin-left: 20px;
+    /* padding-top: 40px; */
+  }
+}
+@media screen and (max-width: 360px) {
+  .faq-imag2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 393px) {
+  .faq-imag2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .faq-icons {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .faq-icons img {
     width: 80%;
-    border-radius: 100%;
-    margin-left: 90px;
-}
-.faq-icons{
-    padding-top: 80px;
-    padding-bottom: 50px;
-    text-align: center !important;
-}
-.faq-heading{
-    padding-top: 80px;
-}
-@media screen and (max-width:1276px) {
-    .faq-heading{
-        padding-left: 15px !important;
-    }
-    
-}
-@media screen and (max-width:540px) {
-    .faq-image{
-        margin-left: 42px;
-        padding-top: 40px;
-    }
-    .faq-heading{
-        text-align: center;
-    }
-}
-@media screen and (max-width:912px) {
-    .faq-heading{
-        text-align: center;
-    }
-    
-}
-@media screen and (max-width:412px) {
-    .faq-image{
-        margin-left: 40px;
-        /* padding-top: 40px; */
-    }
-}
-@media screen and (max-width:768px) {
-    .faq-image{
-        margin-left: 20px;
-        /* padding-top: 40px; */
-    }
-}
-@media screen and (max-width:360px) {
-    .faq-imag2{
-        text-align: center;
-    }
-}
-@media screen and (max-width:393px) {
-    .faq-imag2{
-        text-align: center;
-    }   
+  }
 }
 
-@media screen and (min-width:700px) {
-    .faq-icons{
-        display: flex;
-        margin-left: 1rem;
-    }
-
-    .faq-icons img{
-        width: 80%;
-    }
+@media screen and (max-width: 699px) {
+  .faq-icons {
+    display: flex;
+    overflow: auto;
+  }
+  .faq-icons img {
+    width: 8rem;
+    margin-right: 1rem;
+  }
 }
-
-@media screen and (max-width:699px) {
-    .faq-icons{
-        display: flex;
-        overflow: auto;
-    }
-    .faq-icons img{
-        width: 8rem;
-        margin-right: 1rem;
-    }
-    
+@media screen and (max-width: 320px) {
+  .faq-heading {
+    text-align: center;
+  }
+  .faq-image {
+    margin-left: 10px;
+  }
 }
-@media screen and (max-width:320px) {
-    .faq-heading{
-        text-align: center;
-    }
-    .faq-image{
-        margin-left: 10px;
-    } 
-}
-@media screen and (max-width:375px) {
-    .faq-heading{
-        text-align: center;
-    }
-    
+@media screen and (max-width: 375px) {
+  .faq-heading {
+    text-align: center;
+  }
 }

@@ -1,23 +1,22 @@
-.icons1{
-    font-size: 50px;
+.icons1 {
+  font-size: 50px;
 }
-.pop-heading{
-    text-align: center;
-    padding-top: 50px;
-    color: #fff;
-    padding-bottom: 50px;
+.pop-heading {
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  padding-bottom: 25px;
 }
-.pop-para{
-    font-size: 16px;
-    color: #b3b3b3;
-    line-height: 25px;
-    font-weight: 400;
-   
+.pop-para {
+  font-size: 16px;
+  color: #b3b3b3;
+  line-height: 25px;
+  font-weight: 400;
 }
-.popr-head{
-    color: #fff;
-    font-size: 22px;
-    line-height: 29px;
-    font-weight: 700;
-    font-family: "Raleway";
+.popr-head {
+  color: #fff;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Raleway";
 }

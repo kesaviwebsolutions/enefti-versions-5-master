@@ -1,55 +1,53 @@
-span.vertical-timeline-element-icon.bounce-in{
-    background-color: black !important;
+span.vertical-timeline-element-icon.bounce-in {
+  background-color: black !important;
 }
-.vertical-timeline-element-content.bounce-in{
-    background-color: black !important;
-    color: white !important;
+.vertical-timeline-element-content.bounce-in {
+  background-color: black !important;
+  color: white !important;
 }
-.vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns::before{
-    color: red !important;
+.vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns::before {
+  color: red !important;
 }
-.timeline-head{
+/* .timeline-head{
     padding-top: 40px;
+} */
+.vertical-timeline-element-date {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 32px;
 }
-.vertical-timeline-element-date{
-    color: #000;
-    font-family: 'Raleway';
-    font-size: 20px !important;
-    font-weight: 400;
-    line-height: 32px;
+.vertical-timeline-element-title {
+  color: rgb(201, 16, 120);
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 600;
 }
-.vertical-timeline-element-title{
-    color: rgb(201, 16, 120);
-    font-family: 'Poppins';
-    font-size: 35px;
-    font-weight: 600;
+.vertical-timeline-element-content p {
+  font-family: "Raleway";
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
 }
-.vertical-timeline-element-content p{
-    font-family: "Raleway";
-    font-size: 17px;
-    font-weight: 400;
-    color:#ffffff;
+.image-roadmap {
+  width: 54px;
 }
-.image-roadmap{
-    width: 54px;
+@media screen and (max-width: 540px) {
+  .timeline-head {
+    text-align: center;
+  }
 }
-@media screen and (max-width:540px) {
-    .timeline-head{
-        text-align: center;
-    } 
-  
+@media screen and (max-width: 912px) {
+  .timeline-head {
+    text-align: center;
+  }
+  .image-roadmap {
+    width: 37px !important;
+  }
 }
-@media screen and (max-width:912px) {
-    .timeline-head{
-        text-align: center;
-    } 
-    .image-roadmap{
-        width: 37px !important;
-    }
-}
-@media screen and (max-width:1276px) {
-    .timeline-head{
-        padding-left: 15px !important;
-    }
-    
+@media screen and (max-width: 1276px) {
+  .timeline-head {
+    padding-left: 15px !important;
+  }
 }

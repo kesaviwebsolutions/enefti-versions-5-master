@@ -4,9 +4,12 @@ import "./Numbers.css";
 
 export default function Numbers() {
   return (
-    <section className="number-count" style={{backgroundColor:"#0A0A0A",color:"white"}}>
+    <section
+      className="number-count"
+      style={{ backgroundColor: "#0A0A0A", color: "white" }}
+    >
       <div className="number-image">
-        <div className="container-fluid">
+        <div className="container-fluid py-5">
           {/* <img src={Main} alt='' className="number-image"/> */}
           <h1 className="num-he">Our Numbers</h1>
           <div className="row our-num">

@@ -5,7 +5,7 @@ import "./Holders.css";
 export default function Holders() {
   return (
     <section style={{ background: "#000000", color: "#fff" }}>
-      <div className="container-fluid">
+      <div className="container-fluid py-5">
         <div className="row">
           <h1 className="holder-heading">Holder Benefits</h1>
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">

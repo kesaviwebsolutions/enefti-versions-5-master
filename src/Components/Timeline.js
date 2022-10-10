@@ -9,7 +9,7 @@ import "./Timeline.css";
 function Timeline() {
   return (
     <section id="roadmap">
-      <div style={{ backgroundColor: "#E9EDF3" }}>
+      <div style={{ backgroundColor: "#E9EDF3" }} className="py-5">
         <div className="container-fluid">
           <div className="row">
             <h1 className="timeline-head">THE ROADMAP</h1>

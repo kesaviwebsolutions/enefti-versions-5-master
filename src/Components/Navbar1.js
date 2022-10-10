@@ -61,12 +61,12 @@ function Navbar1() {
                     Roadmap
                   </a>
                 </Nav.Link>
-                <Nav.Link href="#link">
+                {/* <Nav.Link href="#link">
                   {" "}
                   <a className="nav-link" href="#footer">
                     Socials
                   </a>
-                </Nav.Link>
+                </Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

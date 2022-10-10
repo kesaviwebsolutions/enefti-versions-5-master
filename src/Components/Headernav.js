@@ -10,7 +10,7 @@ import {
 export default function Headernav() {
   return (
     <section style={{ background: "#000", padding: "15px" }}>
-      <div className="container-fluid">
+      <div className="container-fluid py-2">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
             <div className="main-header1">
@@ -38,9 +38,9 @@ export default function Headernav() {
                   <BsLinkedin />
                 </li>
               </ul>
-              <button type="button" className="btn-1">
+              {/* <button type="button" className="btn-1">
                 MINT NFT
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

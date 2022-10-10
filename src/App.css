@@ -43,7 +43,7 @@
   line-height: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  padding-top: 14px;
+  /* padding-top: 14px; */
   /* margin-left: 15px; */
 }
 .nav-content {
@@ -58,6 +58,12 @@
   margin: 0 10px;
   color: #9b9b9b;
 }
+
+.fsl {
+  display: block;
+  margin-left: 5rem;
+}
+
 .btn-1 {
   background-image: linear-gradient(
     to right,
@@ -134,5 +140,23 @@
   .btn-1 {
     margin-top: 10px;
     margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .fsl {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 912px) {
+  .fsl {
+    margin-left: -20px;
+  }
+  svg.mx-4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-address-area {
+    margin: 10px 0px;
   }
 }
