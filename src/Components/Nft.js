@@ -75,8 +75,8 @@ function Nft() {
                 margin: "1rem 0rem",
               }}
             >
-              <div style={{ textAlign: "center" }}>
-                <span className="time">
+              <div style={{ textAlign: "center",backgroundColor:"#808080" }}>
+                <span className="time1">
                   <Countdown />
                 </span>
               </div>
