@@ -24,12 +24,21 @@ export default function Footer() {
           </div>
           <div className="col-lg-4 col-md-12">
             <div className="footer-address-area">
-              <h4>Our Address</h4>
-              <p>
-                {" "}
-                XYZ abc malaysia, MY 1233 City name, MA 90896 SA.
-                contact@example.com
-              </p>
+              <h4>Useful Links</h4>
+              <ul className="usefullinks">
+                <li>
+                  <a href="/">Collectibles</a>
+                </li>
+                <li>
+                  <a href="/">Photography</a>
+                </li>
+                <li>
+                  <a href="/">Trading Cards</a>
+                </li>
+                <li>
+                  <a href="/">Virtual Worlds</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="col-lg-4 col-md-12">
