@@ -154,7 +154,7 @@
 }
 @media screen and (max-width: 912px) {
   .fsl {
-    margin-left: -20px;
+    margin-left: -20px !important;
   }
   svg.mx-4 {
     margin-top: 10px;
@@ -162,5 +162,12 @@
   }
   .footer-address-area {
     margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fsl {
+    display: block;
+    margin-left: -3rem;
   }
 }

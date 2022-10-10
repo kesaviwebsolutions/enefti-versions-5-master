@@ -23,19 +23,19 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-lg-4 col-md-12">
-            <div className="footer-address-area">
+            <div className="footer-address-area2">
               <h4>Useful Links</h4>
-              <ul className="usefullinks">
-                <li>
+              <ul>
+                <li className="li">
                   <a href="/">Collectibles</a>
                 </li>
-                <li>
+                <li className="li">
                   <a href="/">Photography</a>
                 </li>
-                <li>
+                <li className="li">
                   <a href="/">Trading Cards</a>
                 </li>
-                <li>
+                <li className="li">
                   <a href="/">Virtual Worlds</a>
                 </li>
               </ul>
