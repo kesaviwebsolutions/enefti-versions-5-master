@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="col-lg-4 col-md-12">
             <div className="footer-sociallinks">
               <div className="fsl">
-                <BsDiscord size={28} className="mx-4" />
-                <BsTwitter size={28} className="mx-4" />
-                <FaFacebookF size={28} className="mx-4" />
-                <FaLinkedinIn size={28} className="mx-4" />
-                <FaInstagramSquare size={28} className="" style={{marginLeft:"1.5rem"}} />
+                <BsDiscord size={28} className="mx-3" />
+                <BsTwitter size={28} className="mx-3" />
+                <FaFacebookF size={28} className="mx-3" />
+                <FaLinkedinIn size={28} className="mx-3" />
+                <FaInstagramSquare size={28} className="" style={{marginLeft:"1.3rem"}} />
               </div>
             </div>
           </div>
