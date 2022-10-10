@@ -5,6 +5,7 @@ import { Button } from "bootstrap";
 import Table from "./Table";
 import TableMobile from "./TableMobile";
 import { auto } from "@popperjs/core";
+import Countdown from "./Countdown";
 // import {mintforpublic, batchmintforpublic, GetChainId, ETHrecover, batchmintforadmin} from "./../../Web3/Web3"
 // import toast, { Toaster } from "react-hot-toast";
 // import axios from "axios";
@@ -32,7 +33,6 @@ import { auto } from "@popperjs/core";
 const id = "63382cdc3171dfd5d7715948";
 // const notify = (msg) => toast.success(msg);
 // const warn = (msg) => toast.error(msg);
-
 
 function Nft() {
   return (
@@ -75,9 +75,11 @@ function Nft() {
                 margin: "1rem 0rem",
               }}
             >
-            <div style={{textAlign:"center"}}>
-            <span className="time">time left</span>
-            </div>
+              <div style={{ textAlign: "center" }}>
+                <span className="time">
+                  <Countdown />
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +192,6 @@ function Nft() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }
