@@ -205,7 +205,7 @@ export default function CustomPaginationActionsTable() {
         overflow:"auto",
         margin:"0 auto",
         color:"white",
-        marginLeft: "1rem"
+        marginLeft: "20px"
       }}
     >
     <div className="row">
