@@ -27,7 +27,7 @@ export default function Holders() {
                   <Accordion.Header>Where to Mint?</Accordion.Header>
                   <Accordion.Body>
                     visit &nbsp;
-                    <a href="nft.gcex.lt" className="channel">
+                    <a href="nft.gcex.lt" className="cc">
                       nft.gcex.lt&nbsp;
                     </a>
                     .Input your desired serial number of the XAUS NFT you wish
@@ -44,18 +44,14 @@ export default function Holders() {
                   <Accordion.Header>Join the club</Accordion.Header>
                   <Accordion.Body>
                     After minting the XAUS NFTs headover to &nbsp;
-                    <a
-                      href="https://opensea.io"
-                      target="_blank"
-                      className="channel"
-                    >
+                    <a href="https://opensea.io" target="_blank" className="cc">
                       opensea.io
                     </a>
                     &nbsp; to see your NFTs. Also head over to our{" "}
                     <a
                       href="https://discord.gg/QNNZGD2Zfa"
                       target="_blank"
-                      className="channel"
+                      className="cc"
                     >
                       discord channel &nbsp;
                     </a>

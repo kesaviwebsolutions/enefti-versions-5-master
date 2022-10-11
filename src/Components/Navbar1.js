@@ -22,7 +22,11 @@ function Navbar1() {
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"
-              style={{ background: "#fff" }}
+              style={{
+                background: "#0064f0",
+                // backgroundImage:
+                //   "linear-gradient( to right, #d01498, #647ecb, #647ecb, #d01498 )",
+              }}
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto" id="navbarSupportedContent">

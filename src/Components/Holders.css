@@ -20,12 +20,12 @@
   color: #fff !important;
   border-bottom: 2px solid #000 !important;
 }
-a.channel {
+a.cc {
   text-decoration: none;
-  color: #c91068;
+  color: #c91068 !important;
 }
-a.channel:hover {
-  color: #c91068;
+a.cc:hover {
+  color: #c91068 !important;
 }
 .accordion-button.collapsed {
   border-bottom: 2px solid #fff;
@@ -46,7 +46,7 @@ img.wallet-img2 {
 button.btn-1.btn.btn-primary {
   padding: 15px;
 }
-.modal-content {
+/* .modal-content {
   background-image: linear-gradient(
     to right,
     #d01498,
@@ -54,10 +54,10 @@ button.btn-1.btn.btn-primary {
     #647ecb,
     #d01498
   );
-}
+} */
 
 div#contained-modal-title-vcenter {
-  color: #fff;
+  color: #000;
 }
 
 /* .holder-heading{

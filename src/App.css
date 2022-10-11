@@ -12,6 +12,12 @@
   max-width: 1440px;
 }
 
+/* .headernav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+} */
+
 /* @media screen and (max-width: 1350px) and (min-width: 750px) {
   .container12 {
     width: 98% !important;
@@ -43,8 +49,7 @@
   line-height: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  /* padding-top: 14px; */
-  /* margin-left: 15px; */
+  margin-top: 14px;
 }
 .nav-content {
   justify-content: end;
@@ -69,13 +74,7 @@
 }
 
 .btn-1 {
-  background-image: linear-gradient(
-    to right,
-    #d01498,
-    #647ecb,
-    #647ecb,
-    #d01498
-  );
+  background-color: #0064f0;
   font-size: 15px;
   font-family: "Raleway", sans-serif;
   line-height: 20px !important;
@@ -146,6 +145,14 @@
     margin-left: 30px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  button.button-magi {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .fsl {
     display: block;

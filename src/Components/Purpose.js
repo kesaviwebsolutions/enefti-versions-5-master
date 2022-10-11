@@ -7,7 +7,13 @@ import {
   FaChartLine,
   FaGift,
 } from "react-icons/fa";
-import { CgCommunity } from "react-icons/cg";
+import { FaCoins } from "react-icons/fa";
+import { GrProductHunt } from "react-icons/gr";
+import { MdFormatListNumberedRtl } from "react-icons/md";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { SiConvertio } from "react-icons/si";
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
+
 import "./Purpose.css";
 
 export default function Purpose() {
@@ -21,10 +27,7 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <GiDiamondTrophy
-                className="icons1"
-                style={{ color: "#D01498" }}
-              />
+              <GrProductHunt className="icons1" style={{ color: "#D01498" }} />
             </div>
             <h3 className="popr-head"> Intrinsic Value</h3>
             <p className="pop-para">
@@ -37,7 +40,10 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <FaRegHandshake className="icons1" style={{ color: "#D01498" }} />
+              <MdFormatListNumberedRtl
+                className="icons1"
+                style={{ color: "#D01498" }}
+              />
             </div>
             <h3 className="popr-head">Sentimental Value</h3>
             <p className="pop-para">
@@ -51,7 +57,10 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <CgCommunity className="icons1" style={{ color: "#D01498" }} />
+              <AiFillSafetyCertificate
+                className="icons1"
+                style={{ color: "#D01498" }}
+              />
             </div>
             <h3 className="popr-head">Shariah Compliant</h3>
             <p className="pop-para">
@@ -67,7 +76,10 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <FaRegHandPeace className="icons1" style={{ color: "#D01498" }} />
+              <RiMoneyDollarCircleFill
+                className="icons1"
+                style={{ color: "#D01498" }}
+              />
             </div>
             <h3 className="popr-head">Wealth</h3>
             <p className="pop-para">
@@ -80,7 +92,7 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <FaChartLine className="icons1" style={{ color: "#D01498" }} />
+              <SiConvertio className="icons1" style={{ color: "#D01498" }} />
             </div>
             <h3 className="popr-head">Convert</h3>
             <p className="pop-para">
@@ -100,7 +112,7 @@ export default function Purpose() {
             style={{ textAlign: "center" }}
           >
             <div>
-              <FaGift className="icons1" style={{ color: "#D01498" }} />
+              <FaCoins className="icons1" style={{ color: "#D01498" }} />
             </div>
             <h3 className="popr-head">Redeem Gold Coin</h3>
             <p className="pop-para">

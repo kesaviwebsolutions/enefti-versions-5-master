@@ -20,6 +20,48 @@ export default function Headernav() {
   return (
     <section style={{ background: "#000", padding: "15px" }}>
       <div className="container-fluid py-2">
+        {/* <div className="headernav">
+          <div className="main-header1">
+            <h5 className="heading">
+              World's first gold (Dinar Standard) backed NFTs.
+            </h5>
+          </div>
+          <div className="ul-content">
+            <ul className="under">
+              <li className="list-item">
+                <a
+                  href="https://t.me/GoldchainExchangeCommunity"
+                  target="_blank"
+                >
+                  <BsTelegram />
+                </a>
+              </li>
+              <li className="list-item">
+                <a href="https://facebook.com/" target="_blank">
+                  <BsFacebook />
+                </a>
+              </li>
+              <li className="list-item">
+                <a href="https://twitter.com/GcexNft" target="_blank">
+                  <BsTwitter />
+                </a>
+              </li>
+              <li className="list-item">
+                <a href="https://discord.gg/QNNZGD2Zfa" target="_blank">
+                  <BsDiscord />
+                </a>
+              </li>
+              <li className="list-item">
+                <a href="https://instagram.com/gcexnft" target="_blank">
+                  <BsInstagram />
+                </a>
+              </li>
+            </ul>
+            <Button variant="primary" onClick={handleShow} className="btn-1">
+              Connect Wallet
+            </Button>
+          </div>
+        </div> */}
         <div className="row">
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
             <div className="main-header1">
@@ -39,9 +81,11 @@ export default function Headernav() {
                     <BsTelegram />
                   </a>
                 </li>
-                {/* <li className="list-item">
-                <a href="https://facebook.com/" target="_blank"><BsFacebook /></a>
-                </li> */}
+                <li className="list-item">
+                  <a href="https://facebook.com/" target="_blank">
+                    <BsFacebook />
+                  </a>
+                </li>
                 <li className="list-item">
                   <a href="https://twitter.com/GcexNft" target="_blank">
                     <BsTwitter />
@@ -93,39 +137,7 @@ export default function Headernav() {
                   />
                 </div>
               </Modal.Body>
-              {/* <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>
-              </Modal.Footer> */}
             </Modal>
-
-            {/* <Modal
-              size="lg"
-              aria-labelledby="contained-modal-title-vcenter"
-              centered
-            >
-              <Modal.Header closeButton>
-                <Modal.Title
-                  id="contained-modal-title-vcenter"
-                  className="ms-auto"
-                >
-                  Please connect your wallet
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div className="d-flex align-items-center justify-content-evenly">
-                  <img src={meta} alt="" className="wallet-img" />
-                  <img src={connect} alt="" className="wallet-img" />
-                </div>
-              </Modal.Body>
-              <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-            </Modal> */}
           </div>
         </div>
       </div>
