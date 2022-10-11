@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BsTelegram,
   BsFacebook,
@@ -7,8 +7,16 @@ import {
   BsLinkedin,
   BsInstagram,
 } from "react-icons/bs";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import meta from "../Images/meta.png";
+import connect from "../Images/connect.dc871f60434bd877387be88f4a3192d6.svg";
 
 export default function Headernav() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <section style={{ background: "#000", padding: "15px" }}>
       <div className="container-fluid py-2">
@@ -24,25 +32,100 @@ export default function Headernav() {
             <div className="ul-content">
               <ul className="under">
                 <li className="list-item">
-                  <a href="https://t.me/GoldchainExchangeCommunity" target="_blank"><BsTelegram /></a>
+                  <a
+                    href="https://t.me/GoldchainExchangeCommunity"
+                    target="_blank"
+                  >
+                    <BsTelegram />
+                  </a>
                 </li>
                 {/* <li className="list-item">
                 <a href="https://facebook.com/" target="_blank"><BsFacebook /></a>
                 </li> */}
                 <li className="list-item">
-                <a href="https://twitter.com/GcexNft" target="_blank"><BsTwitter /></a>
+                  <a href="https://twitter.com/GcexNft" target="_blank">
+                    <BsTwitter />
+                  </a>
                 </li>
                 <li className="list-item">
-                <a href="https://discord.gg/QNNZGD2Zfa" target="_blank"><BsDiscord /></a>
+                  <a href="https://discord.gg/QNNZGD2Zfa" target="_blank">
+                    <BsDiscord />
+                  </a>
                 </li>
                 <li className="list-item">
-                <a href="https://instagram.com/gcexnft" target="_blank"><BsInstagram /></a>
+                  <a href="https://instagram.com/gcexnft" target="_blank">
+                    <BsInstagram />
+                  </a>
                 </li>
               </ul>
-              {/* <button type="button" className="btn-1">
-                MINT NFT
-              </button> */}
+              <Button variant="primary" onClick={handleShow} className="btn-1">
+                Connect Wallet
+              </Button>
             </div>
+
+            <Modal
+              show={show}
+              onHide={handleClose}
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+            >
+              <Modal.Header closeButton>
+                <Modal.Title
+                  id="contained-modal-title-vcenter"
+                  className="ms-auto"
+                >
+                  Please connect your wallet
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div className="d-flex align-items-center justify-content-evenly">
+                  <img
+                    src={meta}
+                    alt=""
+                    className="wallet-img"
+                    onClick={() => setShow(false)}
+                  />
+                  <img
+                    src={connect}
+                    alt=""
+                    className="wallet-img2"
+                    onClick={() => setShow(false)}
+                  />
+                </div>
+              </Modal.Body>
+              {/* <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Close
+                </Button>
+                <Button variant="primary" onClick={handleClose}>
+                  Save Changes
+                </Button>
+              </Modal.Footer> */}
+            </Modal>
+
+            {/* <Modal
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+            >
+              <Modal.Header closeButton>
+                <Modal.Title
+                  id="contained-modal-title-vcenter"
+                  className="ms-auto"
+                >
+                  Please connect your wallet
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div className="d-flex align-items-center justify-content-evenly">
+                  <img src={meta} alt="" className="wallet-img" />
+                  <img src={connect} alt="" className="wallet-img" />
+                </div>
+              </Modal.Body>
+              <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+            </Modal> */}
           </div>
         </div>
       </div>

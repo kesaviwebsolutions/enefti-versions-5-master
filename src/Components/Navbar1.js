@@ -46,7 +46,7 @@ function Navbar1() {
                 </Nav.Link>{" "}
                 <Nav.Link href="#link">
                   {" "}
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#buy">
                     How to Buy
                   </a>
                 </Nav.Link>{" "}

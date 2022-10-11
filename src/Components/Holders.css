@@ -35,6 +35,31 @@ a.channel:hover {
   margin-left: 100px;
   margin-bottom: 30px;
 }
+img.wallet-img {
+  max-width: 100px;
+  cursor: pointer;
+}
+img.wallet-img2 {
+  max-width: 70px;
+  cursor: pointer;
+}
+button.btn-1.btn.btn-primary {
+  padding: 15px;
+}
+.modal-content {
+  background-image: linear-gradient(
+    to right,
+    #d01498,
+    #647ecb,
+    #647ecb,
+    #d01498
+  );
+}
+
+div#contained-modal-title-vcenter {
+  color: #fff;
+}
+
 /* .holder-heading{
     padding-top: 50px;
 } */
@@ -55,13 +80,12 @@ a.channel:hover {
     text-align: center;
   }
 }
-.youtube{
+.youtube {
   width: 85%;
   margin: 50px auto !important;
   display: block;
   height: 17rem;
   border-radius: 25px;
-
 }
 @media screen and (max-width: 912px) {
   .holder-image {
@@ -94,13 +118,11 @@ a.channel:hover {
   .holder-image {
     margin-left: 30px;
   }
-  .youtube{
+  .youtube {
     width: 95%;
     margin: 50px auto !important;
     display: block;
     height: 10rem;
     border-radius: 25px;
-  
   }
 }
-

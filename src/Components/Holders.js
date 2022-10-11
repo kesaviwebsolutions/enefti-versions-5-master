@@ -5,7 +5,7 @@ import "./Holders.css";
 
 export default function Holders() {
   return (
-    <section style={{ background: "#000000", color: "#fff" }}>
+    <section style={{ background: "#000000", color: "#fff" }} id="buy">
       <div className="container-fluid py-5">
         <div className="row">
           <h1 className="holder-heading">HOW TO MINT XAUS NFT</h1>

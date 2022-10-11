@@ -16,10 +16,9 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import LastPageIcon from "@mui/icons-material/LastPage";
 
-
 const tableinfo = [];
 
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= 20; i++) {
   tableinfo.push(i);
 }
 console.log(tableinfo);
@@ -93,24 +92,24 @@ TablePaginationActions.propTypes = {
   rowsPerPage: PropTypes.number.isRequired,
 };
 
-function createData(fat1,fat2,fat3,fat4,fat5,fat6) {
-  return {fat1,fat2,fat3,fat4,fat5,fat6};
+function createData(fat1, fat2, fat3, fat4, fat5, fat6) {
+  return { fat1, fat2, fat3, fat4, fat5, fat6 };
 }
 
 const rows = [
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6),
-  createData(1,2,3,4,5,6)
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
+  createData(1, 2, 3, 4, 5, 6),
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -132,10 +131,10 @@ export default function CustomPaginationActionsTable() {
 
   return (
     <div className="table-mobile">
-    <div style={{textAlign:"center"}}>
-    <span className="title1">Already Minted Nft</span>
-    </div>
-  {/*   <TableContainer component={Paper}>
+      <div style={{ textAlign: "center" }}>
+        <span className="title1">Already Minted Nft</span>
+      </div>
+      {/*   <TableContainer component={Paper}>
       <Table sx={{ minWidth:300}} aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0
@@ -195,29 +194,48 @@ export default function CustomPaginationActionsTable() {
         </TableFooter>
       </Table>
     </TableContainer> */}
-    <div style={{    backgroundColor:"black",marginTop:"3rem",float:"right"}}>
-    <div
-      style={{
-           /* max-width: 600px; */
-    maxHeight: "400px",
-    width: "80%",
-    padding: "0rem",
+      <div
+        style={{ backgroundColor: "black", marginTop: "3rem", float: "right" }}
+      >
+        <div
+          style={{
+            /* max-width: 600px; */
+            maxHeight: "400px",
+            width: "80%",
+            padding: "0rem",
 
-    overflow: "auto",
-    /* margin: 0px auto 0px 20px; */
-    display: "block",
-    color: "white",
-    margin: "0 auto"
-      }}
-    >
-    <div className="row">
-      {tableinfo.map((res) => {
-        return <div className="col-lg-1 col-md-1 col-sm-1 col-1" style={{width:"50px",height:"24px",display:"flex",border:"0.1px solid white",textAlign:"center"}}>&nbsp;{res}&nbsp; </div>
-      })}
+            overflow: "auto",
+            /* margin: 0px auto 0px 20px; */
+            display: "block",
+            color: "white",
+            margin: "0 auto",
+          }}
+        >
+          <div className="row">
+            {tableinfo.map((res) => {
+              return (
+                <div
+                  className="col-lg-1 col-md-1 col-sm-1 col-1"
+                  style={{
+                    width: "50px",
+                    height: "24px",
+                    display: "flex",
+                    border: "0.1px solid white",
+                    textAlign: "center",
+                  }}
+                >
+                  &nbsp;{res}&nbsp;{" "}
+                </div>
+              );
+            })}
+          </div>
+          <div className="tableline my-5">
+            <span>
+              Serial numbers of minted NFTs will appear in the box above.
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-
     </div>
   );
 }
