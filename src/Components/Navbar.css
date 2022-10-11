@@ -23,12 +23,12 @@
     margin-left: 150px;
 }
 @media screen and (max-width:1320px) {
-    .navbar-brand{
+    /* .navbar-brand{
         margin-left: -48px;
-    }
-    .navbar-nav{
+    } */
+    /* .navbar-nav{
         margin-right: -70px;
-    }
+    } */
 }
 @media screen and (max-width:1024px) {
     .navbar-brand{

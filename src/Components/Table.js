@@ -144,7 +144,7 @@ export default function CustomPaginationActionsTable() {
 
   return (
     <div className="table-desktop" style={{ backgroundColor: "#000000" }}>
-      <div style={{ paddingTop: "2rem" }}>
+      <div style={{ paddingTop: "2rem",height:"6rem" }}>
         <span className="title">Already Minted Nft</span>
       </div>
       {/*    <TableContainer component={Paper}>
@@ -220,7 +220,7 @@ export default function CustomPaginationActionsTable() {
         </Table>
       </TableContainer> */}
       <div
-        style={{ backgroundColor: "black", marginTop: "4rem", float: "right" }}
+        style={{ backgroundColor: "black", marginTop: "2rem", float: "right" }}
       >
         <div
           style={{

@@ -24,7 +24,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-12">
+          <div className="col-lg-4 col-md-12 useful-link12" >
             <div className="footer-address-area2 useful-link">
               <h4>Useful Links</h4>
               <ul>
