@@ -14,8 +14,9 @@ function Navbar1() {
               {" "}
               <a className="navbar-brand" href="#">
                 <img
-                  src="https://enefti.modeltheme.com/wp-content/themes/enefti/images/svg/logo.svg"
+                  src="https://cdn2.bttcdn.com/2e4add5483abf2ff/e2bc39a2d59c627c24ff83406d75d1a6.png"
                   alt=""
+                  width="150px"
                 />
               </a>
             </Navbar.Brand>

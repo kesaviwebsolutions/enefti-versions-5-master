@@ -14,7 +14,7 @@ export default function Purpose() {
   return (
     <section style={{ background: "#0A0A0A" }} id="purpose">
       <div className="container-fluid py-5">
-        <h1 className="pop-heading">Our Purpose</h1>
+        <h1 className="pop-heading">What makes XAUS NFTs different?</h1>
         <div className="row">
           <div
             className="col-lg-4 col-md-4 col-sm-12 col-12"
@@ -26,10 +26,10 @@ export default function Purpose() {
                 style={{ color: "#D01498" }}
               />
             </div>
-            <h3 className="popr-head"> Benefits</h3>
+            <h3 className="popr-head"> Intrinsic Value</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              First beautifully designed product
+              that's both stylish and functional​. Backed by 22 Karat Gold (Dinar Standard) Coins.
             </p>
           </div>
           <div
@@ -39,10 +39,12 @@ export default function Purpose() {
             <div>
               <FaRegHandshake className="icons1" style={{ color: "#D01498" }} />
             </div>
-            <h3 className="popr-head">Partnership</h3>
+            <h3 className="popr-head">Sentimental Value</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              Sentimental value in the form of
+              unique serial number printed on 22
+              Carat physical gold dinar coin. Each serial number of NFT
+              is backed by a gold coin of the same serial number.
             </p>
           </div>
           <div
@@ -52,10 +54,13 @@ export default function Purpose() {
             <div>
               <CgCommunity className="icons1" style={{ color: "#D01498" }} />
             </div>
-            <h3 className="popr-head">Our Community</h3>
+            <h3 className="popr-head">Shariah Compliant</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              Gold Dinar coins have proved their
+              value for over 1,400 years. Internationally Certified purity (22
+              Carat), weight (4.25 gm) &
+              thickness (23 mm) of gold dinar
+              coin standard.
             </p>
           </div>
         </div>
@@ -67,10 +72,11 @@ export default function Purpose() {
             <div>
               <FaRegHandPeace className="icons1" style={{ color: "#D01498" }} />
             </div>
-            <h3 className="popr-head">Loyal Buyers</h3>
+            <h3 className="popr-head">Wealth</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              Hedge against currency
+              inflation/ currency devaluation
+              with the stable value of gold.
             </p>
           </div>
           <div
@@ -80,10 +86,13 @@ export default function Purpose() {
             <div>
               <FaChartLine className="icons1" style={{ color: "#D01498" }} />
             </div>
-            <h3 className="popr-head">Experiences</h3>
+            <h3 className="popr-head">Convert</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              XAUS NFT can be converted
+              to XAUS tokens and then
+              swapping to USDT at the
+              prevailing gold price on GCex
+              platform <a href="https://earn.gcex.lt" target="_blank">earn.gcex.lt</a>
             </p>
           </div>
           <div
@@ -93,10 +102,13 @@ export default function Purpose() {
             <div>
               <FaGift className="icons1" style={{ color: "#D01498" }} />
             </div>
-            <h3 className="popr-head">OG Merch</h3>
+            <h3 className="popr-head">Redeem Gold Coin</h3>
             <p className="pop-para">
-              Sed ut perspiciatis unde omnis accusantium doloremque dolorem
-              ipsum quia dolor sit.
+              Each XAUS NFT is linked to
+              your unique serial number
+              physical gold coin held in
+              custody by GCB Trust
+              (Sweden).
             </p>
           </div>
         </div>

@@ -5,6 +5,7 @@ import {
   BsTwitter,
   BsDiscord,
   BsLinkedin,
+  BsInstagram,
 } from "react-icons/bs";
 
 export default function Headernav() {
@@ -15,7 +16,7 @@ export default function Headernav() {
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
             <div className="main-header1">
               <h5 className="heading">
-                Discover, find and sell extraordinary NFT with us.
+                World's first gold (Dinar Standard) backed NFTs.
               </h5>
             </div>
           </div>
@@ -23,19 +24,19 @@ export default function Headernav() {
             <div className="ul-content">
               <ul className="under">
                 <li className="list-item">
-                  <BsTelegram />
+                  <a href="https://t.me/GoldchainExchangeCommunity" target="_blank"><BsTelegram /></a>
+                </li>
+                {/* <li className="list-item">
+                <a href="https://facebook.com/" target="_blank"><BsFacebook /></a>
+                </li> */}
+                <li className="list-item">
+                <a href="https://twitter.com/GcexNft" target="_blank"><BsTwitter /></a>
                 </li>
                 <li className="list-item">
-                  <BsFacebook />
+                <a href="https://discord.gg/QNNZGD2Zfa" target="_blank"><BsDiscord /></a>
                 </li>
                 <li className="list-item">
-                  <BsTwitter />
-                </li>
-                <li className="list-item">
-                  <BsDiscord />
-                </li>
-                <li className="list-item">
-                  <BsLinkedin />
+                <a href="https://instagram.com/gcexnft" target="_blank"><BsInstagram /></a>
                 </li>
               </ul>
               {/* <button type="button" className="btn-1">

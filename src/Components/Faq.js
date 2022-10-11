@@ -23,7 +23,7 @@ export default function Holders() {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                    What utility does XAUS have?
                   </button>
                 </h2>
                 <div
@@ -55,7 +55,7 @@ export default function Holders() {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Accordion Item #2
+                    How to redeem XAUS Physical Gold Coin?
                   </button>
                 </h2>
                 <div
@@ -87,7 +87,7 @@ export default function Holders() {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Accordion Item #3
+                    How to ascertain the purity of XAUS Gold Coins?
                   </button>
                 </h2>
                 <div
