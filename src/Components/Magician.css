@@ -21,6 +21,13 @@
   line-height: 1.4;
   font-weight: 400;
 }
+a.fd {
+  color: #fff;
+  text-decoration: none;
+}
+a.fd:hover {
+  color: #fff;
+}
 .magi-section {
   background: #0a0a0a !important;
 }

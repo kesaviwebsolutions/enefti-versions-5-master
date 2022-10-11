@@ -75,7 +75,8 @@ function Nft() {
                 margin: "1rem 0rem",
               }}
             >
-              <div style={{ textAlign: "center",backgroundColor:"#808080" }}>
+              <div style={{ textAlign: "center",fontWeight:"bold" ,paddingBottom:"2rem"}}>
+              <span>Time Remaining:</span>
                 <span className="time1">
                   <Countdown />
                 </span>
@@ -148,7 +149,7 @@ function Nft() {
       </Table>
     </TableContainer> */}
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-12">
             <div className="row">
               <div>
                 <video loop autoPlay muted className="video">

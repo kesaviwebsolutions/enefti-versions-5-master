@@ -20,6 +20,13 @@
   color: #fff !important;
   border-bottom: 2px solid #000 !important;
 }
+a.channel {
+  text-decoration: none;
+  color: #c91068;
+}
+a.channel:hover {
+  color: #c91068;
+}
 .accordion-button.collapsed {
   border-bottom: 2px solid #fff;
 }
@@ -47,6 +54,14 @@
   .holder-heading {
     text-align: center;
   }
+}
+.youtube{
+  width: 85%;
+  margin: 50px auto !important;
+  display: block;
+  height: 17rem;
+  border-radius: 25px;
+
 }
 @media screen and (max-width: 912px) {
   .holder-image {
@@ -79,4 +94,13 @@
   .holder-image {
     margin-left: 30px;
   }
+  .youtube{
+    width: 95%;
+    margin: 50px auto !important;
+    display: block;
+    height: 10rem;
+    border-radius: 25px;
+  
+  }
 }
+

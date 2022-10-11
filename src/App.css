@@ -61,7 +61,7 @@
 
 .fsl {
   display: block;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
 }
 
 .usefullinks {
@@ -149,12 +149,12 @@
 @media screen and (max-width: 1280px) {
   .fsl {
     display: block;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 }
 @media screen and (max-width: 912px) {
   .fsl {
-    margin-left: -20px !important;
+    /* margin-left: -20px !important; */
   }
   svg.mx-4 {
     margin-top: 10px;
@@ -168,6 +168,6 @@
 @media screen and (max-width: 1024px) {
   .fsl {
     display: block;
-    margin-left: -3rem;
+    /* margin-left: -3rem; */
   }
 }

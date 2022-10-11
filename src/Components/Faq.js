@@ -4,6 +4,7 @@ import "./Faq.css";
 import Icon1 from "../Images/Main-Client1.png";
 import Icon2 from "../Images/Main-Client4.png";
 import Icon3 from "../Images/Main-Client6.png";
+import { Accordion } from "react-bootstrap";
 
 export default function Holders() {
   return (
@@ -12,7 +13,57 @@ export default function Holders() {
         <div className="row">
           <h1 className="faq-heading">FAQ</h1>
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div className="accordion" id="accordionExample">
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  What utility does XAUS have?
+                </Accordion.Header>
+                <Accordion.Body>
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the{" "}
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  How to redeem XAUS Physical Gold Coin?
+                </Accordion.Header>
+                <Accordion.Body>
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the{" "}
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>
+                  How to ascertain the purity of XAUS Gold Coins?
+                </Accordion.Header>
+                <Accordion.Body>
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the{" "}
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            {/* <div className="accordion" id="accordionExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   <button
@@ -109,7 +160,7 @@ export default function Holders() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="faq-imag2">

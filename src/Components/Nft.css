@@ -71,7 +71,7 @@ td {
   border-collapse: collapse;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .table-desktop {
     display: none;
   }
@@ -79,7 +79,7 @@ td {
       margin-left: 46px !important;
     } */
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .table-mobile {
     display: none;
   }
