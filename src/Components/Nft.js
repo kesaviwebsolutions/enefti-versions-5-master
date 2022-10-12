@@ -10,7 +10,12 @@ import toast, { Toaster } from "react-hot-toast";
 // import {mintforpublic, batchmintforpublic, GetChainId, ETHrecover, batchmintforadmin} from "./../../Web3/Web3"
 // import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import { batchmintforadmin, batchmintforpublic, ETHrecover, mintforpublic } from "../Connection/Wallets";
+import {
+  batchmintforadmin,
+  batchmintforpublic,
+  ETHrecover,
+  mintforpublic,
+} from "../Connection/Wallets";
 // import Table from '@mui/material/Table';
 // import TableBody from '@mui/material/TableBody';
 // import TableCell from '@mui/material/TableCell';
@@ -36,121 +41,122 @@ const id = "6346388b1be26e46cfe0d04a";
 const notify = (msg) => toast.success(msg);
 const warn = (msg) => toast.error(msg);
 
-function Nft({url, account}) {
-  const [ids, setIDs] = useState()
-  const [mintsingle, setMintsingle] = useState(0)
-  const [showerror, setShowerror] = useState(false)
-  const [showerroradmin, setShowerroradmin] = useState(false)
-  const [mintedids ,setMintedids] = useState([])
-  const [already, setAlready] = useState(0)
-  const [adminids, setAdminIDs] = useState()
+function Nft({ url, account }) {
+  const [ids, setIDs] = useState();
+  const [mintsingle, setMintsingle] = useState(0);
+  const [showerror, setShowerror] = useState(false);
+  const [showerroradmin, setShowerroradmin] = useState(false);
+  const [mintedids, setMintedids] = useState([]);
+  const [already, setAlready] = useState(0);
+  const [adminids, setAdminIDs] = useState();
 
-  useEffect(()=>{
-    const init = async() =>{
-      axios.get(`${url}/nfts`).then((res)=>{
-        console.log(res)
-        setMintedids(res.data[0].ids)
-      })
-    }
+  useEffect(() => {
+    const init = async () => {
+      axios.get(`${url}/nfts`).then((res) => {
+        console.log(res);
+        setMintedids(res.data[0].ids);
+      });
+    };
     init();
-  },[])
+  }, []);
 
-  const mintDB = async()=>{
-    mintedids.push(Number(mintsingle))
-    axios.post(`${url}/addnft`,{
-      id:id,
-      nfts:mintedids
-    }).then((res)=>{
-      notify("Minted Successfully")
-    }).catch((e)=>{
-      console.log(e)
-    })
-  }
-  const batchmintDB = async()=>{
-    const mintid = ids.split(",")
-    for(let i = 0; i < mintid.length; i++){
-      mintedids.push(Number(mintid[i]))
+  const mintDB = async () => {
+    mintedids.push(Number(mintsingle));
+    axios
+      .post(`${url}/addnft`, {
+        id: id,
+        nfts: mintedids,
+      })
+      .then((res) => {
+        notify("Minted Successfully");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+  const batchmintDB = async () => {
+    const mintid = ids.split(",");
+    for (let i = 0; i < mintid.length; i++) {
+      mintedids.push(Number(mintid[i]));
     }
-    axios.post(`${url}/addnft`,{
-      id:id,
-      nfts:mintedids
-    }).then((res)=>{
-      notify("Minted Successfully")
-    }).catch((e)=>{
-      console.log(e)
-    })
-  }
+    axios
+      .post(`${url}/addnft`, {
+        id: id,
+        nfts: mintedids,
+      })
+      .then((res) => {
+        notify("Minted Successfully");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
-  const handleId =(e)=> {
-    setMintsingle(e.target.value)
-    const mintid = (e.target.value).split(",")
-    if(mintid.length > 10){
+  const handleId = (e) => {
+    setMintsingle(e.target.value);
+    const mintid = e.target.value.split(",");
+    if (mintid.length > 10) {
       warn("Can not mint more than 10");
     }
-    let allFounded = mintid.some( ai => mintedids.includes(Number(ai)));
-    mintid.some( ai => setAlready(ai));
-    if(allFounded){
-      setShowerror(true)
+    let allFounded = mintid.some((ai) => mintedids.includes(Number(ai)));
+    mintid.some((ai) => setAlready(ai));
+    if (allFounded) {
+      setShowerror(true);
+    } else {
+      setShowerror(false);
+      setIDs(e.target.value);
     }
-    else{
-      setShowerror(false)
-      setIDs(e.target.value)
-    }
-  }
+  };
 
-  const batchmint =async()=>{
-    let isrun = false
-    isrun = await axios.get(url).then((res)=>{
-      if(res.data){
+  const batchmint = async () => {
+    let isrun = false;
+    isrun = await axios.get(url).then((res) => {
+      if (res.data) {
         return res.data;
+      } else {
+        return false;
       }
-      else{
-        return false
-      }
-      
-    })
-  if(!isrun){
-    warn("Something went wrong")
-    return true
-  }
-    if(showerror){
-      return true
+    });
+    if (!isrun) {
+      warn("Something went wrong");
+      return true;
+    }
+    if (showerror) {
+      return true;
     }
     const myArray = ids.split(",");
     // console.log(myArray)
-    if(myArray.length > 10){
-      warn("Can not mint more than 10 NFTs at once.")
-      return true
+    if (myArray.length > 10) {
+      warn("Can not mint more than 10 NFTs at once.");
+      return true;
     }
     const data = await batchmintforpublic(myArray);
-    if(data.status){
-      batchmintDB()
+    if (data.status) {
+      batchmintDB();
     }
-  }
+  };
 
-  const publicmint =async()=>{
-    let isrun = false
-    isrun = await axios.get(url).then((res)=>{
-      if(res.data){
+  const publicmint = async () => {
+    let isrun = false;
+    isrun = await axios.get(url).then((res) => {
+      if (res.data) {
         return res.data;
+      } else {
+        return false;
       }
-      else{
-        return false
-      }
-      
-    })
-  if(!isrun){
-    warn("Something went wrong")
-    return true
-  }
-    if(showerror){
-      return true
+    });
+    if (!isrun) {
+      warn("Something went wrong");
+      return true;
     }
-    const data = await mintforpublic(mintsingle)
-    if(data.status){
-      mintDB()
+    if (showerror) {
+      return true;
     }
-  }
+    const data = await mintforpublic(mintsingle);
+    if (data.status) {
+      mintDB();
+    }
+  };
 
   const reoverETH = async () => {
     const data = await ETHrecover();
@@ -159,60 +165,60 @@ function Nft({url, account}) {
     }
   };
 
-  const handleIdadmin =(e)=> {
-    const mintid = (e.target.value).split(",")
-    if(mintid.length > 10){
+  const handleIdadmin = (e) => {
+    const mintid = e.target.value.split(",");
+    if (mintid.length > 10) {
       warn("Can not mint more than 10");
     }
-    let allFounded = mintid.some( ai => mintedids.includes(Number(ai)));
-    if(allFounded){
-      setShowerroradmin(true)
+    let allFounded = mintid.some((ai) => mintedids.includes(Number(ai)));
+    if (allFounded) {
+      setShowerroradmin(true);
+    } else {
+      setShowerroradmin(false);
+      setAdminIDs(e.target.value);
     }
-    else{
-      setShowerroradmin(false)
-      setAdminIDs(e.target.value)
-    }
-  }
+  };
 
-  const batchmintDBadmin = async()=>{
-    const mintid = adminids.split(",")
-    for(let i = 0; i < mintid.length; i++){
-      mintedids.push(Number(mintid[i]))
+  const batchmintDBadmin = async () => {
+    const mintid = adminids.split(",");
+    for (let i = 0; i < mintid.length; i++) {
+      mintedids.push(Number(mintid[i]));
     }
-    axios.post(`${url}/addnft`,{
-      id:id,
-      nfts:mintedids
-    }).then((res)=>{
-      notify("Minted Successfully")
-    }).catch((e)=>{
-      console.log(e)
-    })
-  }
+    axios
+      .post(`${url}/addnft`, {
+        id: id,
+        nfts: mintedids,
+      })
+      .then((res) => {
+        notify("Minted Successfully");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
-  const batchmintadmin =async()=>{
-    let isrun = false
-    isrun = await axios.get(url).then((res)=>{
-      if(res.data){
+  const batchmintadmin = async () => {
+    let isrun = false;
+    isrun = await axios.get(url).then((res) => {
+      if (res.data) {
         return res.data;
+      } else {
+        return false;
       }
-      else{
-        return false
-      }
-      
-    })
-    if(!isrun){
-      warn("Something went wrong")
-      return true
+    });
+    if (!isrun) {
+      warn("Something went wrong");
+      return true;
     }
-    if(showerroradmin){
-      return true
+    if (showerroradmin) {
+      return true;
     }
     const myArray = adminids.split(",");
     const data = await batchmintforadmin(myArray);
-    if(data.status){
+    if (data.status) {
       batchmintDBadmin();
     }
-  }
+  };
 
   return (
     <>
@@ -255,7 +261,7 @@ function Nft({url, account}) {
                   paddingBottom: "2rem",
                 }}
               >
-                <span>Time Remaining:</span>
+                <span>Time Remaining to Mint:</span>
                 <span className="time1">
                   <Countdown />
                 </span>
@@ -352,15 +358,23 @@ function Nft({url, account}) {
                 name="name"
                 placeholder="1,10,100..."
                 className="text23"
-                onChange={(e)=>handleId(e)}
+                onChange={(e) => handleId(e)}
               />
-              {showerror ? <p className="waring">NFT #{ already } is allready minted</p> : ""}
+              {showerror ? (
+                <p className="waring">NFT #{already} is allready minted</p>
+              ) : (
+                ""
+              )}
             </div>
             <div>
-              <button className="button1" onClick={()=>publicmint()} >Mint Single XAUS NFT</button>
+              <button className="button1" onClick={() => publicmint()}>
+                Mint Single XAUS NFT
+              </button>
             </div>
             <div>
-              <button className="button2" onClick={()=>batchmint()}>Mint upto 10 XAUS NFT</button>
+              <button className="button2" onClick={() => batchmint()}>
+                Mint upto 10 XAUS NFT
+              </button>
             </div>
           </div>
           <div>
@@ -374,7 +388,7 @@ function Nft({url, account}) {
                 style={{ margin: "0 auto" }}
               >
                 <TableMobile />
-                <Toaster/>
+                <Toaster />
               </div>
             </div>
           </div>
