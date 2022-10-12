@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BsTelegram,
   BsFacebook,
@@ -11,9 +11,25 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import meta from "../Images/meta.png";
 import connect from "../Images/connect.dc871f60434bd877387be88f4a3192d6.svg";
+import { GetChainId } from "../Connection/Wallets";
 
-export default function Headernav() {
+export default function Headernav({Metamask, account, contractadmin, Dissconnect, walletConnectlogin }) {
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const init = async () => {
+      const id = await GetChainId();
+      console.log("Chain ID is ", id);
+     
+    };
+    init();
+  }, [account]);
+
+  const slicewallet = (add) => {
+    const first = add.slice(0, 5);
+    const second = add.slice(37);
+    return first + "..." + second;
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -102,8 +118,16 @@ export default function Headernav() {
                   </a>
                 </li>
               </ul>
-              <Button variant="primary" onClick={handleShow} className="btn-1">
-                Connect Wallet
+              <Button variant="primary" className="btn-1"
+               onClick={() => {
+                if (account) {
+                  Dissconnect();
+                  return true;
+                }
+                handleShow();
+              }}
+              >
+                {account ? slicewallet(account) : "Connect Wallet"}
               </Button>
             </div>
 
@@ -127,13 +151,19 @@ export default function Headernav() {
                     src={meta}
                     alt=""
                     className="wallet-img"
-                    onClick={() => setShow(false)}
+                    onClick={() => {
+                      Metamask()
+                      setShow(!show)
+                    }}
                   />
                   <img
                     src={connect}
                     alt=""
                     className="wallet-img2"
-                    onClick={() => setShow(false)}
+                    onClick={() => {
+                      walletConnectlogin();
+                      setShow(!show)
+                    }}
                   />
                 </div>
               </Modal.Body>
