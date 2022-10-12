@@ -1,8 +1,14 @@
 .video {
   width: 85%;
-  height: 25rem;
+  height: 20rem;
   display: block;
   margin: 2rem auto 1rem !important;
+}
+video.video2 {
+  width: 85%;
+  height: 20rem;
+  display: block;
+  margin: -1rem auto 1rem !important;
 }
 .text23 {
   margin: 1rem auto;
@@ -242,6 +248,12 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
 }
 
 @media screen and (max-width: 912px) and (min-width: 500px) {
+  .video {
+    width: 85%;
+    height: 12rem;
+    display: block;
+    margin: 2rem auto 1rem !important;
+  }
   .title {
     color: white;
     display: block;
@@ -339,5 +351,29 @@ p.inputtext {
     width: 14rem !important;
     display: block;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .video {
+    width: 85%;
+    height: 20rem;
+    display: block;
+    margin: 1rem auto 1rem !important;
+  }
+  video.video2 {
+    width: 100%;
+    height: 20rem;
+    display: block;
+    margin: -1rem auto 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  video.video2 {
+    width: 75%;
+    height: 20rem;
+    display: block;
+    margin: -3rem auto 1rem !important;
   }
 }
