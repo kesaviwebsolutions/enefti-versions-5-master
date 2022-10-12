@@ -43,17 +43,6 @@ function TablePaginationActions(props) {
   const handleLastPageButtonClick = (event) => {
     onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
-  const [mintedids, setMintedids] = useState([]);
-
-  useEffect(() => {
-    const init = async () => {
-      axios.get(`${url}/nfts`).then((res) => {
-        console.log("all minted nfts",res);
-        setMintedids(res.data[0].ids);
-      });
-    };
-    init();
-  }, []);
 
   return (
     <Box sx={{ flexShrink: 0, ml: 2.5 }}>
@@ -153,7 +142,22 @@ export default function CustomPaginationActionsTable() {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
+  const [mintedids, setMintedids] = useState([]);
 
+  useEffect(() => {
+    const init = async () => {
+      axios.get(`${url}/nfts`).then((res) => {
+        console.log("all minted nfts",res);
+        setMintedids(res.data[0].ids);
+      });
+    };
+    init();
+    setInterval(()=>{
+      init()
+    },3000)
+  }, []);
+
+  // console.log(mintedids)
   return (
     <div className="table-desktop" style={{ backgroundColor: "#000000" }}>
       <div style={{ paddingTop: "2rem", height: "6rem" }}>
@@ -246,7 +250,7 @@ export default function CustomPaginationActionsTable() {
           }}
         >
           <div className="row">
-            {tableinfo.map((res) => {
+            {mintedids && mintedids.map((res) => {
               return (
                 <div
                   className="col-lg-1 col-md-1 col-sm-1 col-1"
