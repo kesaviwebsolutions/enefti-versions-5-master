@@ -19,46 +19,25 @@ export default function Holders() {
                   What utility does XAUS have?
                 </Accordion.Header>
                 <Accordion.Body>
-                  XAUS NFTs are backed by physical gold coin for each serial
-                  number. The gold coins (Gold Dinar standard) have already been
-                  minted are in the custody of GCB Trust (Sweden). Anyone
-                  holding XAUS NFT of a particular serial number has the right
-                  to claim the gold coin of the same serial number.
-                  Alternatively, holders can choose to convert their NFTs to
-                  XAUS tokens. 1 XAUS NFT = 10 XAUS tokens. XAUS tokens can be
-                  staked to earn an estimated return of upto 6% per annum. XAUS
-                  NFTs backed by physical gold coins retains its base value and
-                  hence the investors are protected from impermanent loss.
-                  Moreover, it can be traded at a higher value on opensea.io
-                  depending on the sentiment associated with a particular serial
-                  number such as #000786 or #000999. GCB trust can only ensure
-                  the value of XAUS NFTs as per their weight i.e. 4.25 Grams of
-                  22 Karat gold and its market value at the time of redemption.
+                  Each serial number of an XAUS NFT is backed by a physical gold coin. GCB Trust (Sweden) holds the gold coins (Gold Dinar standard) that have already been minted. An individual who holds an XAUS NFT bearing a particular serial number is entitled to claim the gold coin bearing the same serial number. As an alternative, holders can convert their NFTs into XAUS tokens. 1 XAUS NFT = 10 XAUS tokens. The value of XAUS tokens can be staked to earn a return of up to 6% per year. <br/>
+                  <br/>
+                  NFTs backed by physical gold coins retain their base value, thus protecting investors from impermanent losses. As a result, it can be traded at a higher value on opensea.io based on the sentiment associated with a particular serial number, such as #000786 or #000999. Accordingly, the GCB trust can only guarantee the value of XAUS NFTs based on the weight of the gold, which is 4.25 grams of 22 Karat gold at the time of redemption, and its market value.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
                 <Accordion.Header>
-                  How to redeem XAUS Physical Gold &nbsp; Coin?
+                  How to redeem XAUS Physical Gold Coin?
                 </Accordion.Header>
                 <Accordion.Body>
-                  <strong>Option 1:</strong> To redeem physical gold coin of
-                  same serial as of the XAUS NFT you hold, you can contact GCB
-                  trust. After registering your interst in receiving physical
-                  coin and the preferred delivery address, you will need to burn
-                  the NFT and the gold coins of same serial number will be
-                  dispatched to your preferred address. You are advised to
-                  download the NFT (image/video) as proof of authenticity of the
-                  gold coin.
+                  <strong>Option 1:</strong> In order to redeem physical gold coins of the same serial number as the XAUS NFT you hold, you should contact GCB trust. In order to receive physical coins, you must register your interest along with the preferred address for delivery. You will then need to burn the NFT and the gold coins with the same serial number will be sent to the address you specified. To ensure the authenticity of the gold coin, you are advised to download the NFT (image/video) prior to burning the NFT.
                   <br />
                   <br />
-                  <strong>Option 2:</strong> You can claim 10 XAUS tokens in
-                  replacement of your NFT of same value and swap those to USDT
-                  on earn.gcex.lt.
+                  <strong>Option 2:</strong> As a replacement for your NFT of the same amount, you can claim 10 XAUS tokens and swap them for USDT on earn.gcex.lt.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
-                  Who is the custodian of XAUS &nbsp; physical gold coins?
+                  Who is the custodian of XAUS physical gold coins?
                 </Accordion.Header>
                 <Accordion.Body>
                   <strong>GCB Trust, Sweden</strong> is the custodian of XAUS
