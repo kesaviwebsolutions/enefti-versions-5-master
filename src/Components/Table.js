@@ -270,7 +270,7 @@ export default function CustomPaginationActionsTable() {
           </div>
           <div className="tableline my-5">
             <span>
-              Serial numbers of minted NFTs will appear in the box above.
+              Serial numbers of minted NFTs will appear in the box above. (The numbers shown in the table above are for testing purpose. These numbers will reset before the actual time of mint i.e. 02 November 2022 at 11:22AM (GMT+3)
             </span>
           </div>
         </div>
