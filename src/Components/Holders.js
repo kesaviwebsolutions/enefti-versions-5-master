@@ -1,5 +1,5 @@
 import React from "react";
-import Image4 from "../Images/Image-4.jpg";
+import Image4 from "../Images/XAUs NFT.mp4";
 import Accordion from "react-bootstrap/Accordion";
 import "./Holders.css";
 
@@ -158,7 +158,7 @@ export default function Holders() {
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
             <div>
               <iframe
-                src="https://www.youtube.com/embed/g7-D4UXYDl8"
+                src={Image4}
                 frameborder="0"
                 title="HOW TO MINT XAUS NFT"
                 className="youtube"
