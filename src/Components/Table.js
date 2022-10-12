@@ -15,14 +15,15 @@ import FirstPageIcon from "@mui/icons-material/FirstPage";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import LastPageIcon from "@mui/icons-material/LastPage";
-
+import axios from "axios";
+import { useState, useEffect } from "react";
 const tableinfo = [];
 
 for (let i = 1; i <= 15; i++) {
   tableinfo.push(i);
 }
 console.log(tableinfo);
-
+const url = "https://reffer.ap.ngrok.io";
 function TablePaginationActions(props) {
   const theme = useTheme();
   const { count, page, rowsPerPage, onPageChange } = props;
@@ -42,6 +43,17 @@ function TablePaginationActions(props) {
   const handleLastPageButtonClick = (event) => {
     onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
+  const [mintedids, setMintedids] = useState([]);
+
+  useEffect(() => {
+    const init = async () => {
+      axios.get(`${url}/nfts`).then((res) => {
+        console.log("all minted nfts",res);
+        setMintedids(res.data[0].ids);
+      });
+    };
+    init();
+  }, []);
 
   return (
     <Box sx={{ flexShrink: 0, ml: 2.5 }}>

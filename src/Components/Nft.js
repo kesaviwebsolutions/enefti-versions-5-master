@@ -309,7 +309,7 @@ function Nft({ url, account }) {
         <tr><td>12</td></tr>
       </table> */}
 
-              <Table />
+              <Table url={url}/>
 
               {/* <TableContainer component={Paper} className="table table-minted">
       <Table sx={{ minWidth: 100 }} aria-label="simple table">
