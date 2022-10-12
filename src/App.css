@@ -139,7 +139,7 @@ p.testing {
     text-align: center;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .ul-content {
     text-align: center;
   }
