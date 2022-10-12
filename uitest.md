@@ -3,4 +3,4 @@
 ## Desktop
 
 I. First issue
-First issue!](/assets/images/san-juan-mountains.jpg "Not aligned properly")
+First issue!](https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080) "Not aligned properly")
