@@ -9,7 +9,7 @@ export default function Holders() {
       <div className="container-fluid py-5">
         <div className="row">
           <h1 className="holder-heading">HOW TO MINT XAUS NFT</h1>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-12 acc-12">
             <div className="container-fluid">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
@@ -155,14 +155,11 @@ export default function Holders() {
               </div>
             </div> */}
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-12 video245">
             <div>
-              <iframe
-                src={Image4}
-                frameborder="0"
-                title="HOW TO MINT XAUS NFT"
-                className="youtube"
-              ></iframe>
+              <video loop autoPlay muted className="video2 video23">
+                <source src={Image4} type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

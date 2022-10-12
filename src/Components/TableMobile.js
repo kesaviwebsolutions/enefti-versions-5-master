@@ -10,6 +10,7 @@ import TableFooter from "@mui/material/TableFooter";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import axios from "axios";
 import IconButton from "@mui/material/IconButton";
 import FirstPageIcon from "@mui/icons-material/FirstPage";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -116,6 +117,22 @@ export default function CustomPaginationActionsTable() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(7);
 
+  const [mintedids, setMintedids] = React.useState([]);
+
+  const url = "https://reffer.ap.ngrok.io";
+  React.useEffect(() => {
+    const init = async () => {
+      axios.get(`${url}/nfts`).then((res) => {
+        console.log("all minted nfts", res);
+        setMintedids(res.data[0].ids);
+      });
+    };
+    init();
+    setInterval(() => {
+      init();
+    }, 3000);
+  }, []);
+
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
@@ -212,22 +229,23 @@ export default function CustomPaginationActionsTable() {
           }}
         >
           <div className="row">
-            {tableinfo.map((res) => {
-              return (
-                <div
-                  className="col-lg-1 col-md-1 col-sm-1 col-1"
-                  style={{
-                    width: "50px",
-                    height: "24px",
-                    display: "flex",
-                    border: "0.1px solid white",
-                    textAlign: "center",
-                  }}
-                >
-                  &nbsp;{res}&nbsp;{" "}
-                </div>
-              );
-            })}
+            {mintedids &&
+              mintedids.map((res) => {
+                return (
+                  <div
+                    className="col-lg-1 col-md-1 col-sm-1 col-1"
+                    style={{
+                      width: "50px",
+                      height: "24px",
+                      display: "flex",
+                      border: "0.1px solid white",
+                      textAlign: "center",
+                    }}
+                  >
+                    &nbsp;{res}&nbsp;{" "}
+                  </div>
+                );
+              })}
           </div>
           <div className="tableline my-5">
             <span>

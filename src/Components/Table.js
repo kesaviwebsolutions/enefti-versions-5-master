@@ -147,14 +147,14 @@ export default function CustomPaginationActionsTable() {
   useEffect(() => {
     const init = async () => {
       axios.get(`${url}/nfts`).then((res) => {
-        console.log("all minted nfts",res);
+        console.log("all minted nfts", res);
         setMintedids(res.data[0].ids);
       });
     };
     init();
-    setInterval(()=>{
-      init()
-    },3000)
+    setInterval(() => {
+      init();
+    }, 3000);
   }, []);
 
   // console.log(mintedids)
@@ -250,22 +250,23 @@ export default function CustomPaginationActionsTable() {
           }}
         >
           <div className="row">
-            {mintedids && mintedids.map((res) => {
-              return (
-                <div
-                  className="col-lg-1 col-md-1 col-sm-1 col-1"
-                  style={{
-                    width: "50px",
-                    height: "24px",
-                    display: "flex",
-                    border: "0.1px solid white",
-                    textAlign: "center",
-                  }}
-                >
-                  &nbsp;{res}&nbsp;{" "}
-                </div>
-              );
-            })}
+            {mintedids &&
+              mintedids.map((res) => {
+                return (
+                  <div
+                    className="col-lg-1 col-md-1 col-sm-1 col-1"
+                    style={{
+                      width: "50px",
+                      height: "24px",
+                      display: "flex",
+                      border: "0.1px solid white",
+                      textAlign: "center",
+                    }}
+                  >
+                    &nbsp;{res}&nbsp;{" "}
+                  </div>
+                );
+              })}
           </div>
           <div className="tableline my-5">
             <span>

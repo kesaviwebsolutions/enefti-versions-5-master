@@ -129,3 +129,14 @@ div#contained-modal-title-vcenter {
 .accordion-button::after {
   background-color: white;
 }
+.video245 {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .acc-12 {
+    margin-bottom: 5rem !important;
+  }
+}
+.holder-heading {
+  margin-bottom: 2rem;
+}
