@@ -17,10 +17,9 @@ export default function Holders() {
                   <Accordion.Body>
                     <strong>RECOMMENDED WALLET:</strong> Metamask
                     <br></br>
-                    <strong>XAUS NETWORK:</strong> Ethereum Mainnet
+                    <strong>XAUS NFTs NETWORK:</strong> Ethereum Mainnet
                     <br></br>
-                    <strong>REQUIRED GAS & MINTING FEES:</strong> Fund the
-                    wallet with ETH
+                    <strong>REQUIRED GAS & MINTING FEES:</strong> ETH
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">

@@ -12,22 +12,23 @@ export default function Holders() {
       <div className="container-fluid py-5">
         <div className="row">
           <h1 className="faq-heading">FAQ</h1>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-12">
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   What utility does XAUS have?
                 </Accordion.Header>
                 <Accordion.Body>
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  XAUS NFTs are backed by physical gold coin for each serial number. The gold coins (Gold Dinar standard)
+                  have already been minted are in the custody of GCB Trust (Sweden). Anyone holding XAUS NFT of a particular 
+                  serial number has the right to claim the gold coin of the same serial number. Alternatively, holders can
+                  choose to convert their NFTs to XAUS tokens. 1 XAUS NFT = 10 XAUS tokens. XAUS tokens can be staked to earn
+                  an estimated return of upto 6% per annum.
+
+                  XAUS NFTs backed by physical gold coins retains its base value and hence the investors are protected from
+                  impermanent loss. Moreover, it can be traded at a higher value on opensea.io depending on the sentiment associated 
+                  with a particular serial number such as #000786 or #000999. GCB trust can only ensure the value of XAUS NFTs as per their
+                  weight i.e. 4.25 Grams of 22 Karat gold and its market value at the time of redemption.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
@@ -35,138 +36,41 @@ export default function Holders() {
                   How to redeem XAUS Physical Gold Coin?
                 </Accordion.Header>
                 <Accordion.Body>
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <strong>Option 1:</strong> To redeem physical gold coin of same serial as of the XAUS NFT you hold, you can contact GCB trust.
+                  After registering your interst in receiving physical coin and the preferred delivery address, you will need to burn the NFT
+                  and the gold coins of same serial number will be dispatched to your preferred address. You are advised to download 
+                  the NFT (image/video) as proof of authenticity of the gold coin.<br/>
+                  <br/>
+                  <strong>Option 2:</strong> You can claim 10 XAUS tokens in replacement of your NFT of same value and swap those to USDT on earn.gcex.lt.
+
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
-                  How to ascertain the purity of XAUS Gold Coins?
+                  Who is the custodian of XAUS physical gold coins?
                 </Accordion.Header>
                 <Accordion.Body>
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <strong>GCB Trust, Sweden</strong> is the custodian of XAUS Physical gold coins and 1000 gold coins are in the reserve
+                  for 1000 NFTs that will be out on opensea.io. An independent party's audit ensuring the deposit will be available on the website
+                  nft.gcex.lt.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>
+                  How to ascertain purity/fineness of XAUS gold coins?
+                </Accordion.Header>
+                <Accordion.Body>
+                  XAUS gold coins are certified for its purity/fineness of 22 carat and weight of 4.25gms by Dalitana UAB, Lithuania. You can find the certificate on 
+                  the website nft.gcex.lt
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-            {/* <div className="accordion" id="accordionExample">
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What utility does XAUS have?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    How to redeem XAUS Physical Gold Coin?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    How to ascertain the purity of XAUS Gold Coins?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          {/* <div className="col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="faq-imag2">
               <img src={Image4} alt="" className="faq-image" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="container py-5">
