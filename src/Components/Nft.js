@@ -223,58 +223,59 @@ function Nft({ url, account }) {
   return (
     <>
       <div style={{ backgroundColor: "black" }}>
-        <div
-          item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xl={12}
-          className="reff-id"
-          sx={{
-            fontSize: "1rem",
-            marginBottom: "3rem",
-            textAlign: "center",
-            fontWeight: 800,
-            width: "100%",
-            overflow: "hidden",
-          }}
-        >
-          <div className="row">
-            <div
-              item
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-              style={{
-                textAlign: "center",
-                color: "white",
-                margin: "1rem 0rem",
-              }}
-            >
+        <div className="container-fluid">
+          <div
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+            className="reff-id"
+            sx={{
+              fontSize: "1rem",
+              marginBottom: "3rem",
+              textAlign: "center",
+              fontWeight: 800,
+              width: "100%",
+              overflow: "hidden",
+            }}
+          >
+            <div className="row">
               <div
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={12}
+                xl={12}
                 style={{
                   textAlign: "center",
-                  fontWeight: "bold",
-                  paddingBottom: "2rem",
+                  color: "white",
+                  margin: "1rem 0rem",
                 }}
               >
-                <span>Time Remaining to Mint:</span>
-                <span className="time1">
-                  <Countdown />
-                </span>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    paddingBottom: "2rem",
+                  }}
+                >
+                  <span>Time Remaining to Mint:</span>
+                  <span className="time1">
+                    <Countdown />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 col-12 Table"
-            style={{ backgroundColor: "#000000" }}
-          >
-            {/*     <table>
+          <div className="row">
+            <div
+              className="col-lg-6 col-md-6 col-sm-12 col-12 Table"
+              style={{ backgroundColor: "#000000" }}
+            >
+              {/*     <table>
         <thead>
           <tr>
             <th>Minted NFTs</th>
@@ -308,9 +309,9 @@ function Nft({ url, account }) {
         <tr><td>12</td></tr>
       </table> */}
 
-            <Table />
+              <Table />
 
-            {/* <TableContainer component={Paper} className="table table-minted">
+              {/* <TableContainer component={Paper} className="table table-minted">
       <Table sx={{ minWidth: 100 }} aria-label="simple table">
         <TableHead  className="minted" >
           <TableRow>
@@ -333,62 +334,63 @@ function Nft({ url, account }) {
         </TableBody>
       </Table>
     </TableContainer> */}
-          </div>
-          <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-            <div className="row">
-              <div>
-                <video loop autoPlay muted className="video">
-                  <source
-                    src={require("../Images/Video23.mp4")}
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <div>
-                <p className="inputtext">
-                  Input NFT number you wish to mint. If you are minting multiple
-                  then put all the numbers separated by a comma.
-                </p>
-              </div>
             </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div className="row">
+                <div>
+                  <video loop autoPlay muted className="video">
+                    <source
+                      src={require("../Images/Video23.mp4")}
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+                <div>
+                  <p className="inputtext">
+                    Input NFT number you wish to mint. If you are minting
+                    multiple then put all the numbers separated by a comma.
+                  </p>
+                </div>
+              </div>
 
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="1,10,100..."
-                className="text23"
-                onChange={(e) => handleId(e)}
-              />
-              {showerror ? (
-                <p className="waring">NFT #{already} is allready minted</p>
-              ) : (
-                ""
-              )}
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="1,10,100..."
+                  className="text23"
+                  onChange={(e) => handleId(e)}
+                />
+                {showerror ? (
+                  <p className="waring">NFT #{already} is allready minted</p>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div>
+                <button className="button1" onClick={() => publicmint()}>
+                  Mint Single XAUS NFT
+                </button>
+              </div>
+              <div>
+                <button className="button2" onClick={() => batchmint()}>
+                  Mint upto 10 XAUS NFT
+                </button>
+              </div>
             </div>
             <div>
-              <button className="button1" onClick={() => publicmint()}>
-                Mint Single XAUS NFT
-              </button>
-            </div>
-            <div>
-              <button className="button2" onClick={() => batchmint()}>
-                Mint upto 10 XAUS NFT
-              </button>
-            </div>
-          </div>
-          <div>
-            <div container spacing={2}>
-              <div
-                item
-                xs={12}
-                sm={12}
-                md={12}
-                xl={12}
-                style={{ margin: "0 auto" }}
-              >
-                <TableMobile />
-                <Toaster />
+              <div container spacing={2}>
+                <div
+                  item
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  xl={12}
+                  style={{ margin: "0 auto" }}
+                >
+                  <TableMobile />
+                  <Toaster />
+                </div>
               </div>
             </div>
           </div>

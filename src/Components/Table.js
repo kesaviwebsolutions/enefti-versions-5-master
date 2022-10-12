@@ -225,13 +225,12 @@ export default function CustomPaginationActionsTable() {
         <div
           style={{
             width: "94%",
-            float: "right",
             maxHeight: "400px",
-
             padding: "0px 0rem",
             overflow: "auto",
-
             color: "white",
+            display: "block",
+            marign: "auto",
           }}
         >
           <div className="row">
