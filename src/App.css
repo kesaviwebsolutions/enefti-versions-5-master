@@ -146,12 +146,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   button.button-magi {
     display: block;
     margin: 20px auto;
   }
-}
+} */
 
 @media screen and (max-width: 1280px) {
   .fsl {

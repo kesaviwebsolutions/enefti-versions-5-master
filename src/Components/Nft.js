@@ -217,12 +217,6 @@ function Nft({url, account}) {
   return (
     <>
       <div style={{ backgroundColor: "black" }}>
-        <div>
-          <marquee style={{ color: "white" }}>
-            Input NFT number you wish to mint. If you are minting multiple then
-            put all the numbers separated by a comma.
-          </marquee>
-        </div>
         <div
           item
           xs={12}
@@ -254,8 +248,14 @@ function Nft({url, account}) {
                 margin: "1rem 0rem",
               }}
             >
-              <div style={{ textAlign: "center",fontWeight:"bold" ,paddingBottom:"2rem"}}>
-              <span>Time Remaining:</span>
+              <div
+                style={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  paddingBottom: "2rem",
+                }}
+              >
+                <span>Time Remaining:</span>
                 <span className="time1">
                   <Countdown />
                 </span>
@@ -337,6 +337,12 @@ function Nft({url, account}) {
                     type="video/mp4"
                   />
                 </video>
+              </div>
+              <div>
+                <p className="inputtext">
+                  Input NFT number you wish to mint. If you are minting multiple
+                  then put all the numbers separated by a comma.
+                </p>
               </div>
             </div>
 

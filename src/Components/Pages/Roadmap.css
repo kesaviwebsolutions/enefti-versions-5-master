@@ -113,14 +113,15 @@ h1 span {
 .input span::after {
   content: attr(data-year);
   top: 25px;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   font-size: 14px;
 }
 .input span::before {
   content: attr(data-info);
   top: -65px;
   width: 70px;
-  transform: translateX(-5px) rotateZ(-45deg);
+  margin-left: -30px;
+  /* transform: translateX(-5px) rotateZ(-45deg); */
   font-size: 12px;
   text-indent: -10px;
 }
@@ -222,5 +223,17 @@ h1 span {
 @media (min-width: 500px) {
   .flex-parent {
     margin-top: 4rem;
+  }
+}
+
+.roadmapimg {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .roadmapimage {
+    display: none;
   }
 }
