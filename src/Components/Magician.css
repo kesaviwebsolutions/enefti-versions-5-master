@@ -103,7 +103,8 @@ a.fd:hover {
     text-align: left;
   }
   .button-magi {
-    margin-left: 50px;
+    display: block;
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 912px) {

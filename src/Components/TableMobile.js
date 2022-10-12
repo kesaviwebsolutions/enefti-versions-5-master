@@ -18,7 +18,7 @@ import LastPageIcon from "@mui/icons-material/LastPage";
 
 const tableinfo = [];
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 1; i++) {
   tableinfo.push(i);
 }
 console.log(tableinfo);

@@ -299,8 +299,9 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
   border-radius: 10px;
   font-weight: 800;
   font-family: Raleway;
-  width: 25rem;
-  float: right;
+  width: 20rem;
+  display: block;
+  margin: auto;
 }
 
 p.inputtext {

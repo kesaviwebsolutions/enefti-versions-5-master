@@ -18,7 +18,7 @@ import LastPageIcon from "@mui/icons-material/LastPage";
 
 const tableinfo = [];
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= 1; i++) {
   tableinfo.push(i);
 }
 console.log(tableinfo);
@@ -145,7 +145,7 @@ export default function CustomPaginationActionsTable() {
   return (
     <div className="table-desktop" style={{ backgroundColor: "#000000" }}>
       <div style={{ paddingTop: "2rem", height: "6rem" }}>
-        <span className="title">Already Minted Nft</span>
+        <p className="title">Already Minted Nft</p>
       </div>
       {/*    <TableContainer component={Paper}>
         <Table
@@ -224,7 +224,7 @@ export default function CustomPaginationActionsTable() {
       >
         <div
           style={{
-            width: "93%",
+            width: "94%",
             float: "right",
             maxHeight: "400px",
 
