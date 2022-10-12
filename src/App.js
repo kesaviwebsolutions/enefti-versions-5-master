@@ -29,7 +29,7 @@ function App() {
       <Purpose />
       <Numbers />
       <Holders />
-      {/* <Timeline /> */}
+      <Timeline />
       <Horizontalroadmap />
       <Faq />
       <Footer />
