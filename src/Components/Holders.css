@@ -126,3 +126,6 @@ div#contained-modal-title-vcenter {
     border-radius: 25px;
   }
 }
+.accordion-button::after {
+  background-color: white;
+}

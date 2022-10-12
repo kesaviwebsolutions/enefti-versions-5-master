@@ -121,3 +121,7 @@
     text-align: center;
   }
 }
+
+.accordion-button::after {
+  background-color: white;
+}
