@@ -1,5 +1,5 @@
-export const nftaddress = "0x1dEd9C0a7befa55f0056b850f4759F9Ed2b5c117"  //for goerli test net
-// export const nftaddress = "0xd28013F6D2Be14C84047418761e577780F1928E8"
+// export const nftaddress = "0x1dEd9C0a7befa55f0056b850f4759F9Ed2b5c117"  //for goerli test net
+export const nftaddress = "0xd28013F6D2Be14C84047418761e577780F1928E8"
 
 export const nftabi = [
   {
