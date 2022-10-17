@@ -161,7 +161,7 @@ export default function CustomPaginationActionsTable() {
   return (
     <div className="table-desktop" style={{ backgroundColor: "#000000" }}>
       <div style={{ paddingTop: "2rem", height: "6rem" }}>
-        <p className="title">Already Minted Nft</p>
+        <p className="title">Minted XAUS NFTs</p>
       </div>
       {/*    <TableContainer component={Paper}>
         <Table
