@@ -72,6 +72,13 @@
 .usefullinks {
   text-align: center;
 }
+/* background: #D01398;
+border: none; */
+
+button.btn-1.btn.btn-primary {
+  background: #D01398;
+  border: none;
+}
 
 .btn-1 {
   background-color: #0064f0;

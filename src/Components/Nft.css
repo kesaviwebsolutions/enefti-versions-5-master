@@ -38,9 +38,8 @@ input::placeholder {
   display: block;
   margin: 1rem auto;
   border: none;
-  background-color: #a6bcdc;
-  color: white;
-  color: #0064f0;
+  background-color: #c26ca8;
+  color: rgb(229, 229, 229);
   width: 26rem;
   font-weight: 800;
   border-radius: 10px;
@@ -50,7 +49,7 @@ input::placeholder {
   display: block;
   margin: 1rem auto;
   border: none;
-  background-color: #0064f0;
+  background-color: #D01398;
   color: white;
 
   width: 26rem;
