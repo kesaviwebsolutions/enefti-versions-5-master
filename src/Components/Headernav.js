@@ -118,7 +118,7 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
                   </a>
                 </li>
               </ul>
-              <Button variant="primary" className="btn-1"
+              <Button variant="primary"  className="btn-1"
                onClick={() => {
                 if (account) {
                   Dissconnect();
