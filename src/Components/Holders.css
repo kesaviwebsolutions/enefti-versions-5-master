@@ -45,6 +45,8 @@ img.wallet-img2 {
 }
 button.btn-1.btn.btn-primary {
   padding: 15px;
+  display: block;
+  margin-left: auto;
 }
 /* .modal-content {
   background-image: linear-gradient(

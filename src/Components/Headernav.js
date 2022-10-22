@@ -12,6 +12,7 @@ import Modal from "react-bootstrap/Modal";
 import meta from "../Images/meta.png";
 import connect from "../Images/connect.dc871f60434bd877387be88f4a3192d6.svg";
 import { GetChainId } from "../Connection/Wallets";
+import Navbar1 from "./Pages/Navbar2";
 
 export default function Headernav({Metamask, account, contractadmin, Dissconnect, walletConnectlogin }) {
   const [show, setShow] = useState(false);
@@ -78,6 +79,7 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
             </Button>
           </div>
         </div> */}
+        <Navbar1/>
         <div className="row">
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
             <div className="main-header1">
