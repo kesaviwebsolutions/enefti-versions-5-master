@@ -1,10 +1,5 @@
-ul {
-  display: flex !important;
-  list-style-type: none !important;
-}
-ul li {
-  list-style-type: none !important;
-}
+
+
 .button-nav1 {
   background-color: black;
   color: white;
@@ -46,6 +41,7 @@ ul li {
   border: 0.5px solid white;
   border-radius: 5px;
   background-color: black;
+  margin:0 auto;
 }
 div#offcanvasExample {
   background-color: black;
@@ -63,4 +59,11 @@ a.btn.btn-primary.icon-fa {
 }
 .container-fluid{
         --bs-gutter-x: 0rem !important;
+}
+.offcanvas-button1{
+  width: 90%;
+  background-color: transparent !important;
+  margin: 0 auto !important;
+  border-color: white !important;
+  display: block !important;
 }

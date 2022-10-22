@@ -35,102 +35,22 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <section style={{ background: "#000", padding: "15px" }}>
-      <div className="container-fluid py-2">
-        {/* <div className="headernav">
-          <div className="main-header1">
-            <h5 className="heading">
-              World's first gold (Dinar Standard) backed NFTs.
-            </h5>
-          </div>
-          <div className="ul-content">
-            <ul className="under">
-              <li className="list-item">
-                <a
-                  href="https://t.me/GoldchainExchangeCommunity"
-                  target="_blank"
-                >
-                  <BsTelegram />
-                </a>
-              </li>
-              <li className="list-item">
-                <a href="https://facebook.com/" target="_blank">
-                  <BsFacebook />
-                </a>
-              </li>
-              <li className="list-item">
-                <a href="https://twitter.com/GcexNft" target="_blank">
-                  <BsTwitter />
-                </a>
-              </li>
-              <li className="list-item">
-                <a href="https://discord.gg/QNNZGD2Zfa" target="_blank">
-                  <BsDiscord />
-                </a>
-              </li>
-              <li className="list-item">
-                <a href="https://instagram.com/gcexnft" target="_blank">
-                  <BsInstagram />
-                </a>
-              </li>
-            </ul>
-            <Button variant="primary" onClick={handleShow} className="btn-1">
-              Connect Wallet
-            </Button>
-          </div>
-        </div> */}
-        <Navbar1/>
+    <section style={{ background: "#000", padding: " 0px 15px" }}>
+    <Navbar1/>
+    {/*   <div className="container-fluid ">
+
+  
         <div className="row">
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
             <div className="main-header1">
               <h5 className="heading">
-                World's first gold (Dinar Standard) backed NFTs.
+
               </h5>
             </div>
           </div>
           <div className="col-lg-7 col-md-7 col-sm-12 col-12 nav-content">
-            <div className="ul-content">
-              <ul className="under">
-                <li className="list-item">
-                  <a
-                    href="https://t.me/GoldchainExchangeCommunity"
-                    target="_blank"
-                  >
-                    <BsTelegram />
-                  </a>
-                </li>
-                <li className="list-item">
-                  <a href="https://facebook.com/" target="_blank">
-                    <BsFacebook />
-                  </a>
-                </li>
-                <li className="list-item">
-                  <a href="https://twitter.com/GcexNft" target="_blank">
-                    <BsTwitter />
-                  </a>
-                </li>
-                <li className="list-item">
-                  <a href="https://discord.gg/QNNZGD2Zfa" target="_blank">
-                    <BsDiscord />
-                  </a>
-                </li>
-                <li className="list-item">
-                  <a href="https://instagram.com/gcexnft" target="_blank">
-                    <BsInstagram />
-                  </a>
-                </li>
-              </ul>
-              <Button variant="primary"  className="btn-1"
-               onClick={() => {
-                if (account) {
-                  Dissconnect();
-                  return true;
-                }
-                handleShow();
-              }}
-              >
-                {account ? slicewallet(account) : "Connect Wallet"}
-              </Button>
+            <div className="ul-content" style={{display:"flex"}}>
+       
             </div>
 
             <Modal
@@ -172,7 +92,7 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
             </Modal>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

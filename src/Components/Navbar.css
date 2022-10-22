@@ -20,7 +20,7 @@
     color: #838181 !important;
 }
 .navbar-nav{
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 @media screen and (max-width:1320px) {
     /* .navbar-brand{

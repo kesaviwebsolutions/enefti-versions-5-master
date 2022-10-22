@@ -12,13 +12,13 @@ function Navbar1() {
           <Container fluid>
             <Navbar.Brand href="#home">
               {" "}
-              <a className="navbar-brand" href="#">
+          {/*     <a className="navbar-brand" href="#">
                 <img
                   src="https://cdn2.bttcdn.com/2e4add5483abf2ff/e2bc39a2d59c627c24ff83406d75d1a6.png"
                   alt=""
                   width="150px"
                 />
-              </a>
+              </a> */}
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"
