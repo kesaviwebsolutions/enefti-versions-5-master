@@ -94,11 +94,20 @@ const provider = new WalletConnectProvider({
       /// NFT CONTRACT METHODS////
         /// NFT CONTRACT METHODS////
 
-
+  export const getCost = async()=>{
+    try {
+        const contract = new web3.eth.Contract(nftabi, nftaddress);
+        const data = await contract.methods.cost().call();
+        return data/10**18;
+    } catch (error) {
+        // console.log(error)
+    }
+  }
 
   export const batchmintforpublic = async(id)=>{
     try {
-      const a = await towie(0.01*id.length)
+      const cost = await getCost();
+      const a = await towie(Number(cost)*id.length)
       console.log(id)
       const contract = new web3.eth.Contract(nftabi, nftaddress);
       const data = await contract.methods.batchmintPublic(await getUserAddress(),id).send({from :await getUserAddress(),value:a});
@@ -109,7 +118,8 @@ const provider = new WalletConnectProvider({
   }
   export const mintforpublic = async(id)=>{
     try {
-      const a = await towie(0.01)
+      const cost = await getCost();
+      const a = await towie(Number(cost))
       const contract = new web3.eth.Contract(nftabi, nftaddress);
       const data = await contract.methods.mintPublic(await getUserAddress(),id).send({from :await getUserAddress(),value:a});
       return data;
@@ -150,4 +160,5 @@ const provider = new WalletConnectProvider({
         // console.log(error)
     }
   }
+ 
   

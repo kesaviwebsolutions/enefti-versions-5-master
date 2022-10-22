@@ -32,6 +32,13 @@ function App() {
       }
       const id = await GetChainId();
       console.log("Chain ID is ",id);
+      if (Number(id) != 1) {
+        await window.ethereum.request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: "0x1" }], // chainId must be in hexadecimal numbers
+        });
+      }
+
     };
 
     init();
