@@ -15,15 +15,15 @@ import FirstPageIcon from "@mui/icons-material/FirstPage";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import LastPageIcon from "@mui/icons-material/LastPage";
-
-
+import axios from "axios";
+import { useState, useEffect } from "react";
 const tableinfo = [];
 
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= 15; i++) {
   tableinfo.push(i);
 }
 console.log(tableinfo);
-
+const url = "https://reffer.ap.ngrok.io";
 function TablePaginationActions(props) {
   const theme = useTheme();
   const { count, page, rowsPerPage, onPageChange } = props;
@@ -43,8 +43,6 @@ function TablePaginationActions(props) {
   const handleLastPageButtonClick = (event) => {
     onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
-
-
 
   return (
     <Box sx={{ flexShrink: 0, ml: 2.5 }}>
@@ -126,8 +124,6 @@ const rows = [
   createData(1),
   createData(1),
   createData(1),
-
-
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -146,12 +142,28 @@ export default function CustomPaginationActionsTable() {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
+  const [mintedids, setMintedids] = useState([]);
 
+  useEffect(() => {
+    const init = async () => {
+      axios.get(`${url}/nfts`).then((res) => {
+        console.log("all minted nfts", res);
+        setMintedids(res.data[0].ids);
+      });
+    };
+    init();
+    setInterval(() => {
+      init();
+    }, 3000);
+  }, []);
+
+  // console.log(mintedids)
   return (
-    <div className="table-desktop" style={{backgroundColor:"#000000"}}>
-    <div style={{paddingTop:"2rem"}}>
-    <span className="title">Already Minted Nft</span></div>
-   {/*    <TableContainer component={Paper}>
+    <div className="table-desktop" style={{ backgroundColor: "#000000" }}>
+      <div style={{ paddingTop: "2rem", height: "6rem" }}>
+        <p className="title">Minted XAUS NFTs</p>
+      </div>
+      {/*    <TableContainer component={Paper}>
         <Table
           sx={{ minWidth: 300, background: "#000" }}
           aria-label="custom pagination table"
@@ -223,24 +235,50 @@ export default function CustomPaginationActionsTable() {
           </TableFooter>
         </Table>
       </TableContainer> */}
-  <div style={{    backgroundColor:"black",marginTop:"4rem",float:"right"}}>
       <div
-        style={{
-          maxWidth: "600px",
-          maxHeight: "400px",
- 
-          padding: "0px 0rem",
-          overflow:"auto",
-          margin:"0 auto",
-          color:"white"
-        }}
+        style={{ backgroundColor: "black", marginTop: "2rem", float: "right" }}
       >
-      <div className="row">
-        {tableinfo.map((res) => {
-          return <div className="col-lg-1 col-md-1 col-sm-1 col-1" style={{width:"50px",height:"24px",display:"flex",border:"0.1px solid white",textAlign:"center"}}>&nbsp;{res}&nbsp; </div>
-        })}
+        <div
+          style={{
+            width: "94%",
+            maxHeight: "400px",
+            padding: "0px 0rem",
+            overflow: "auto",
+            color: "white",
+            display: "block",
+            marign: "auto",
+          }}
+        >
+          <div className="row">
+            {mintedids &&
+              mintedids.map((res) => {
+                return (
+                  <div
+                    className="col-lg-1 col-md-1 col-sm-1 col-1"
+                    style={{
+                      width: "50px",
+                      height: "24px",
+                      display: "flex",
+                      border: "0.1px solid white",
+                      textAlign: "center",
+                    }}
+                  >
+                    &nbsp;{res}&nbsp;{" "}
+                  </div>
+                );
+              })}
+          </div>
+          <div className="tableline my-5">
+            <span>
+              Serial numbers of minted NFTs will appear in the box above.
+              {/* <p className="testing">
+                (The numbers shown in the table above are for testing purpose.
+                These numbers will reset before the actual time of mint i.e. 02
+                November 2022 at 11:22AM (GMT+3)
+              </p> */}
+            </span>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

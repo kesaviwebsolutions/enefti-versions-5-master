@@ -14,20 +14,20 @@ export default function Numbers() {
           <h1 className="num-he">Our Numbers</h1>
           <div className="row our-num">
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-              <h5 className="num-head">1234</h5>
-              <p className="num-para">Case Completed</p>
+              <h5 className="num-head">1000</h5>
+              <p className="num-para">XAUS NFTs</p>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-              <h5 className="num-head">32</h5>
-              <p className="num-para">Team Member</p>
+              <h5 className="num-head">4.25 kg</h5>
+              <p className="num-para">of Physical Gold Coins</p>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-              <h5 className="num-head">12</h5>
-              <p className="num-para">Year Experience</p>
+              <h5 className="num-head">1400</h5>
+              <p className="num-para">Years of history</p>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-              <h5 className="num-head">1475</h5>
-              <p className="num-para">Satisfied Customers</p>
+              <h5 className="num-head">22 karat</h5>
+              <p className="num-para">Dinar Standard</p>
             </div>
           </div>
         </div>

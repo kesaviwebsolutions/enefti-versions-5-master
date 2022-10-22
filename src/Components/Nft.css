@@ -1,8 +1,14 @@
 .video {
   width: 85%;
-  height: 25rem;
+  height: 20rem;
   display: block;
   margin: 2rem auto 1rem !important;
+}
+video.video2 {
+  width: 85%;
+  height: 20rem;
+  display: block;
+  margin: -1rem auto 1rem !important;
 }
 .text23 {
   margin: 1rem auto;
@@ -32,9 +38,8 @@ input::placeholder {
   display: block;
   margin: 1rem auto;
   border: none;
-  background-color: #a6bcdc;
-  color: white;
-  color: #0064f0;
+  background-color: #c26ca8;
+  color: rgb(229, 229, 229);
   width: 26rem;
   font-weight: 800;
   border-radius: 10px;
@@ -44,7 +49,7 @@ input::placeholder {
   display: block;
   margin: 1rem auto;
   border: none;
-  background-color: #0064f0;
+  background-color: #D01398;
   color: white;
 
   width: 26rem;
@@ -71,7 +76,7 @@ td {
   border-collapse: collapse;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .table-desktop {
     display: none;
   }
@@ -79,7 +84,7 @@ td {
       margin-left: 46px !important;
     } */
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .table-mobile {
     display: none;
   }
@@ -210,27 +215,18 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
     width: 20rem;
   }
 }
-.title {
-  color: white;
-  text-align: center;
-  margin-left: 14rem;
-  background-color: rgb(110, 110, 110);
-  padding: 0.8rem 2.4rem;
-  border-radius: 30px;
-  font-weight: 800;
-  font-family: Raleway;
-}
+
 .title1 {
   color: white;
   text-align: center;
   background-color: rgb(110, 110, 110);
   padding: 0.8rem 2.4rem;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 800;
   font-family: Raleway;
   margin: 1rem;
 }
-.time{
+.time {
   color: white;
   text-align: center;
   background-color: rgb(181 181 181);
@@ -240,7 +236,6 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
   font-family: Raleway;
   margin-top: 2rem !important;
 }
-
 
 .css-ebg7sp {
   width: 80% !important;
@@ -252,11 +247,17 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
 }
 
 @media screen and (max-width: 912px) and (min-width: 500px) {
+  .video {
+    width: 85%;
+    height: 12rem;
+    display: block;
+    margin: 2rem auto 1rem !important;
+  }
   .title {
     color: white;
     display: block;
-    width: 50%;
-    margin: auto;
+    /* width: 50%; */
+    /* margin: auto; */
     /* margin-left: 0rem; */
     background-color: rgb(110, 110, 110);
     padding: 0.8rem 2.4rem;
@@ -265,38 +266,113 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiNativeSelect-icon.MuiTablePagin
     font-family: Raleway;
   }
 }
-@media screen and (min-width:1350px) {
-  .title{
-    margin-left: 22rem !important;
+/* @media screen and (min-width: 1550px) {
+  .title {
+    margin-left: 22rem;
   }
-}
-#number{
+} */
+#number {
   width: 5px !important;
   height: 20px !important;
 }
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
-
-}
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #808080; 
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #808080;
   border-radius: 10px;
-}
- 
+} */
+
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(206, 192, 245); 
+/* ::-webkit-scrollbar-thumb {
+  background: rgb(206, 192, 245);
   border-radius: 10px;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #c7eef3; 
-}
-.bHnuak{
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #c7eef3;
+} */
+.bHnuak {
   height: 0px !important;
   /* font-family: Raleway; */
+  /* font-family: Raleway; */
+}
+.title {
+  color: white;
+  text-align: center;
+  /* margin-left: 27rem !important; */
+  background-color: rgb(110, 110, 110);
+  padding: 0.8rem 2.4rem;
+  border-radius: 10px;
+  font-weight: 800;
+  font-family: Raleway;
+  width: 20rem;
+  display: block;
+  margin: auto;
+}
+
+p.inputtext {
+  color: #fff;
+  width: 26rem;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 2000px) {
+  .minted-nft {
+    height: 9rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p.inputtext {
+    color: #fff;
+    width: 21rem;
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 412px) {
+  p.inputtext {
+    color: #fff;
+    width: 20rem;
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 280px) {
+  p.inputtext {
+    color: #fff;
+    width: 14rem !important;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .video {
+    width: 85%;
+    height: 20rem;
+    display: block;
+    margin: 1rem auto 1rem !important;
+  }
+  video.video2 {
+    width: 100%;
+    height: 20rem;
+    display: block;
+    margin: -1rem auto 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  video.video2 {
+    width: 75%;
+    height: 20rem;
+    display: block;
+    margin: -3rem auto 1rem !important;
+  }
 }

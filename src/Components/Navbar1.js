@@ -12,16 +12,21 @@ function Navbar1() {
           <Container fluid>
             <Navbar.Brand href="#home">
               {" "}
-              <a className="navbar-brand" href="#">
+          {/*     <a className="navbar-brand" href="#">
                 <img
-                  src="https://enefti.modeltheme.com/wp-content/themes/enefti/images/svg/logo.svg"
+                  src="https://cdn2.bttcdn.com/2e4add5483abf2ff/e2bc39a2d59c627c24ff83406d75d1a6.png"
                   alt=""
+                  width="150px"
                 />
-              </a>
+              </a> */}
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"
-              style={{ background: "#fff" }}
+              style={{
+                background: "#0064f0",
+                // backgroundImage:
+                //   "linear-gradient( to right, #d01498, #647ecb, #647ecb, #d01498 )",
+              }}
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto" id="navbarSupportedContent">
@@ -45,7 +50,7 @@ function Navbar1() {
                 </Nav.Link>{" "}
                 <Nav.Link href="#link">
                   {" "}
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#buy">
                     How to Buy
                   </a>
                 </Nav.Link>{" "}

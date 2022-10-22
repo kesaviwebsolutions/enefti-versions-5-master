@@ -1,4 +1,5 @@
 import React from "react";
+import introvideo from "../Images/intro-video.MP4";
 import "./Magician.css";
 
 export default function Magician() {
@@ -7,18 +8,41 @@ export default function Magician() {
       <div className="container-fluid py-5">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-            <h1 className="head-magi">Musician's OGs</h1>
+            <p className="head-magi">Return of the Gold Dinar</p>
             <p className="magi-para">
-              Et ligula ullamcorper malesuada proin libero nunc consequat.
-              Sagittis aliquam malesuada bibendum arcu. At in tellus integer
-              feugiat scelerisque varius morbi enim nunc. Faucibus ornare
-              suspendisse sed nisi lacus. Varius sit amet mattis vulputate enim
-              nulla. Pulvinar mattis nunc sed blandit libero volutpat sed. In
-              nulla.
+              XAUS NFTs are world's first NFTs backed by physical 22 carat
+              purity gold. The unique XAUS NFT serial number is embossed on a
+              physical gold coin of gold weight of 4.25 grams, equivalent to 10
+              XAUS tokens. From the International Halal Assurance Institute,
+              XAUS is the first cryptocurrency to receive a Certificate of
+              Sharia Compliance (05-March-2022).
             </p>
+            <button className="button-magi">
+              <a
+                href="https://discord.gg/QNNZGD2Zfa"
+                target="_blank"
+                className="fd"
+              >
+                Find more on our Discord
+              </a>
+            </button>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12 magi-button">
-            <button className="button-magi">Find more on our Discord</button>
+          {/* <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/g7-D4UXYDl8"
+                frameborder="0"
+                title="HOW TO MINT XAUS NFT"
+                className="youtube"
+              ></iframe>
+            </div>
+          </div> */}
+          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div>
+              <video loop autoPlay muted className="video2">
+                <source src={introvideo} type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </div>

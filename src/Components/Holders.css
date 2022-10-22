@@ -20,6 +20,13 @@
   color: #fff !important;
   border-bottom: 2px solid #000 !important;
 }
+a.cc {
+  text-decoration: none;
+  color: #c91068 !important;
+}
+a.cc:hover {
+  color: #c91068 !important;
+}
 .accordion-button.collapsed {
   border-bottom: 2px solid #fff;
 }
@@ -28,6 +35,33 @@
   margin-left: 100px;
   margin-bottom: 30px;
 }
+img.wallet-img {
+  max-width: 100px;
+  cursor: pointer;
+}
+img.wallet-img2 {
+  max-width: 70px;
+  cursor: pointer;
+}
+button.btn-1.btn.btn-primary {
+  padding: 0px 20px;
+  display: block;
+  margin-left: auto;
+}
+/* .modal-content {
+  background-image: linear-gradient(
+    to right,
+    #d01498,
+    #647ecb,
+    #647ecb,
+    #d01498
+  );
+} */
+
+div#contained-modal-title-vcenter {
+  color: #000;
+}
+
 /* .holder-heading{
     padding-top: 50px;
 } */
@@ -47,6 +81,13 @@
   .holder-heading {
     text-align: center;
   }
+}
+.youtube {
+  width: 85%;
+  margin: 50px auto !important;
+  display: block;
+  height: 17rem;
+  border-radius: 25px;
 }
 @media screen and (max-width: 912px) {
   .holder-image {
@@ -79,4 +120,25 @@
   .holder-image {
     margin-left: 30px;
   }
+  .youtube {
+    width: 95%;
+    margin: 50px auto !important;
+    display: block;
+    height: 10rem;
+    border-radius: 25px;
+  }
+}
+.accordion-button::after {
+  background-color: white;
+}
+.video245 {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .acc-12 {
+    margin-bottom: 5rem !important;
+  }
+}
+.holder-heading {
+  margin-bottom: 2rem;
 }

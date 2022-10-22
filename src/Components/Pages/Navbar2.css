@@ -1,0 +1,69 @@
+
+
+.button-nav1 {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin-right: 1rem;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.button-nav2 {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+@media screen and (max-width: 1000px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .icon-fa {
+    display: none !important;
+  }
+}
+.offcanvas-button {
+  margin: 1rem auto;
+}
+.offcanvas-button2 {
+  width: 90%;
+  padding: 5px 20px;
+  /* margin: 1rem; */
+  display: block;
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  background-color: black;
+  margin:0 auto;
+}
+div#offcanvasExample {
+  background-color: black;
+}
+a.btn.btn-primary.icon-fa {
+  background-color: black;
+  border-color: white;
+}
+.button.btn-close.text-reset{
+    background-color: white !important;
+}
+#button-reset1{
+    color:white !important;
+    background-color: white !important;
+}
+.container-fluid{
+        --bs-gutter-x: 0rem !important;
+}
+.offcanvas-button1{
+  width: 90%;
+  background-color: transparent !important;
+  margin: 0 auto !important;
+  border-color: white !important;
+  display: block !important;
+}
