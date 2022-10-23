@@ -36,9 +36,9 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
   const handleShow = () => setShow(true);
   return (
     <section style={{ background: "#000", padding: " 0px 15px" }}>
-    <Navbar1/>
-    {/*   <div className="container-fluid ">
 
+     <div className="container-fluid ">
+     <Navbar1/>
   
         <div className="row">
           <div className="col-lg-5 col-md-5 col-sm-12 col-12 ">
@@ -92,7 +92,7 @@ export default function Headernav({Metamask, account, contractadmin, Dissconnect
             </Modal>
           </div>
         </div>
-      </div> */}
+      </div> 
     </section>
   );
 }

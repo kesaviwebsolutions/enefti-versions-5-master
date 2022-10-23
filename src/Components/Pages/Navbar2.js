@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import meta from "../../Images/meta.png";
 import connect from "../../Images/connect.dc871f60434bd877387be88f4a3192d6.svg";
-import { GetChainId } from "../../Connection/Wallets";
+import { GetChainId } from "../../../../enefti-versions-5-master/src/Connection/Wallets";
 
 import "./Navbar2.css";
 import { FaBars } from "react-icons/fa";

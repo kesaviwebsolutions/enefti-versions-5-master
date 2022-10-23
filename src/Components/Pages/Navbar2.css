@@ -57,9 +57,9 @@ a.btn.btn-primary.icon-fa {
     color:white !important;
     background-color: white !important;
 }
-.container-fluid{
+/* .container-fluid{
         --bs-gutter-x: 0rem !important;
-}
+} */
 .offcanvas-button1{
   width: 90%;
   background-color: transparent !important;
