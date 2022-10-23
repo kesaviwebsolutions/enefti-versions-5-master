@@ -84,6 +84,7 @@ function Navbar2({
                   class="nav-link active"
                   aria-current="page"
                   href="https://www.gcex.lt/Trade"
+                  target="_blank"
                 >
                   Trade
                 </a>
@@ -92,6 +93,7 @@ function Navbar2({
                 <a
                   class="nav-link"
                   href="https://www.gcex.lt/register?redirect=/Wallet"
+                  target="_blank"
                 >
                   Wallet
                 </a>
@@ -101,28 +103,34 @@ function Navbar2({
                 <a
                   class="nav-link "
                   href="https://www.gcex.lt/register?redirect=/Orders"
+                  target="_blank"
                 >
                   Orders
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.gcex.lt/ieo">
+                <a class="nav-link " href="https://www.gcex.lt/ieo" target="_blank">
                   IEO
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.goldchainex.com/">
+                <a class="nav-link " href="https://www.goldchainex.com/" target="_blank">
                   GC Group
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.goldchainex.com/news">
+                <a class="nav-link " href="https://www.goldchainex.com/news" target="_blank">
                   Featured Press
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://trade.theunitedcapital.com/">
+                <a class="nav-link " href="https://trade.theunitedcapital.com/" target="_blank">
                   GCex Spot Trading
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://earn.gcex.lt/" target="_blank">
+                  Earn
                 </a>
               </li>
             </ul>
