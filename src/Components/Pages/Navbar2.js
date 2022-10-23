@@ -109,27 +109,47 @@ function Navbar2({
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.gcex.lt/ieo" target="_blank">
+                <a
+                  class="nav-link "
+                  href="https://www.gcex.lt/ieo"
+                  target="_blank"
+                >
                   IEO
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.goldchainex.com/" target="_blank">
+                <a
+                  class="nav-link "
+                  href="https://www.goldchainex.com/"
+                  target="_blank"
+                >
                   GC Group
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://www.goldchainex.com/news" target="_blank">
+                <a
+                  class="nav-link "
+                  href="https://www.goldchainex.com/news"
+                  target="_blank"
+                >
                   Featured Press
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://trade.theunitedcapital.com/" target="_blank">
+                <a
+                  class="nav-link "
+                  href="https://trade.theunitedcapital.com/"
+                  target="_blank"
+                >
                   GCex Spot Trading
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://earn.gcex.lt/" target="_blank">
+                <a
+                  class="nav-link "
+                  href="https://earn.gcex.lt/"
+                  target="_blank"
+                >
                   Earn
                 </a>
               </li>
@@ -245,61 +265,80 @@ function Navbar2({
         <div class="offcanvas-body">
           <div class="dropdown mt-3">
             <div className="offcanvas-button">
-            
               <Button
-              variant="primary"
-              className="offcanvas-button1"
-              onClick={() => {
-                if (account) {
-                  Dissconnect();
-                  return true;
-                }
-                handleShow();
-              }}
-              style={{ padding: "7px 28px" }}
-            >
-              {account ? slicewallet(account) : "Connect Wallet"}
-            </Button>
-     
+                variant="primary"
+                className="offcanvas-button1"
+                onClick={() => {
+                  if (account) {
+                    Dissconnect();
+                    return true;
+                  }
+                  handleShow();
+                }}
+                style={{ padding: "7px 28px" }}
+              >
+                {account ? slicewallet(account) : "Connect Wallet"}
+              </Button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.gcex.lt/Trade">TRADE</a>
+                <a href="https://www.gcex.lt/Trade" target="_blank">
+                  TRADE
+                </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.gcex.lt/register?redirect=/Wallet">
+                <a
+                  href="https://www.gcex.lt/register?redirect=/Wallet"
+                  target="_blank"
+                >
                   WALLET
                 </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.gcex.lt/register?redirect=/Orders">
+                <a
+                  href="https://www.gcex.lt/register?redirect=/Orders"
+                  target="_blank"
+                >
                   ORDERS
                 </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.gcex.lt/ieo">IEO</a>
+                <a href="https://www.gcex.lt/ieo" target="_blank">
+                  IEO
+                </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.goldchainex.com/">GC GROUP</a>
+                <a href="https://www.goldchainex.com/" target="_blank">
+                  GC GROUP
+                </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://www.goldchainex.com/news">FEATERED PRESS</a>
+                <a href="https://www.goldchainex.com/news" target="_blank">
+                  FEATERED PRESS
+                </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="https://trade.theunitedcapital.com/">
+                <a href="https://trade.theunitedcapital.com/" target="_blank">
                   GCEX SPOT TRADING
+                </a>
+              </button>
+            </div>
+            <div className="offcanvas-button">
+              <button className="offcanvas-button2">
+                <a href="https://earn.gcex.lt/" target="_blank">
+                  EARN
                 </a>
               </button>
             </div>
