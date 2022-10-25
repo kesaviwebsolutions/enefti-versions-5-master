@@ -141,10 +141,10 @@ function Navbar2({
                   href="https://trade.theunitedcapital.com/"
                   target="_blank"
                 >
-                  GCex Spot Trading
+                Spot Trading
                 </a>
               </li>
-              <li class="nav-item">
+           {/*    <li class="nav-item">
                 <a
                   class="nav-link "
                   href="https://earn.gcex.lt/"
@@ -152,7 +152,7 @@ function Navbar2({
                 >
                   Earn
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div className="ul-content" style={{ display: "flex" }}>
               <ul
@@ -303,7 +303,7 @@ function Navbar2({
                   href="https://www.gcex.lt/register?redirect=/Orders"
                   target="_blank"
                 >
-                  ORDERS
+                  ORDER
                 </a>
               </button>
             </div>
@@ -331,17 +331,17 @@ function Navbar2({
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://trade.theunitedcapital.com/" target="_blank">
-                  GCEX SPOT TRADING
+               SPOT TRADING
                 </a>
               </button>
             </div>
-            <div className="offcanvas-button">
+        {/*     <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://earn.gcex.lt/" target="_blank">
                   EARN
                 </a>
               </button>
-            </div>
+            </div> */}
 
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
