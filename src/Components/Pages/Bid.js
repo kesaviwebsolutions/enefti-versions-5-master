@@ -24,9 +24,7 @@ function Bid({ account, url }) {
 
   const handleSno = async(num) => {
     try {
-        if(num > 1000){
-          return;
-        }
+      setBidno(Number(num))
       const BNO = Number(num)
       const bids = await axios.post(`${url}/isbid`,{
         "num":BNO
