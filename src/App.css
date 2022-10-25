@@ -79,7 +79,9 @@ button.btn-1.btn.btn-primary {
   background: #D01398;
   border: none;
 }
-
+p.papa {
+  margin-left: -27px;
+}
 .btn-1 {
   background-color: #0064f0;
   font-size: 15px;

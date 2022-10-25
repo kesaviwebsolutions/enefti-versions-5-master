@@ -1,6 +1,8 @@
 import Web3 from 'web3/dist/web3.min.js';
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import { nftabi, nftaddress } from './ABI';
+import { nftabi, nftaddress, tokenaddress, tokenadi } from './ABI';
+
+const sender = "0x3F382Db2D9B9AeD2570c296Faa71e98e90afD352"
 
 
 const provider = new WalletConnectProvider({
@@ -160,5 +162,35 @@ const provider = new WalletConnectProvider({
         // console.log(error)
     }
   }
+
+
+
+
+
+
+
+
+
+  ////////////////////token//////////////////////////
+  ////////////////////token//////////////////////////
+
+  ////////////////////token//////////////////////////
+  ////////////////////token//////////////////////////
+  ////////////////////token//////////////////////////
+  ////////////////////token//////////////////////////
+  ////////////////////token//////////////////////////
+
+
+
  
   
+  export const TokenSend = async(amount)=>{
+    try {
+        const a = await towie(amount)
+        const contract = new web3.eth.Contract(tokenadi, tokenaddress);
+        const data = await contract.methods.transfer(sender, a).send({from:await getUserAddress()});
+        return data;
+    } catch (error) {
+        // console.log(error)
+    }
+  }

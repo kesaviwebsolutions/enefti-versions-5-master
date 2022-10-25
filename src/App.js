@@ -27,6 +27,9 @@ import {
 import Bid from "./Components/Pages/Bid";
 import Home from "./Components/Pages/Home";
 
+// const bidurl = "http://localhost:3032"
+const bidurl = "https://bid.in.ngrok.io"
+
 function App() {
   const web3 = webProvide();
   const [acount, setAccount] = useState();
@@ -100,7 +103,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home account={acount} />} />
-          <Route path="/bid" element={<Bid />} />
+          <Route path="/bid" element={<Bid account={acount} url={bidurl}/>} />
         </Routes>
       </Router>
     </div>
