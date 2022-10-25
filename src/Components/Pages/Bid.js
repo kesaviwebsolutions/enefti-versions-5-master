@@ -6,7 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import "./Bid.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import { TokenSend } from "../../Connection/Wallets";
+import { TokenSend, TokenBalace } from "../../Connection/Wallets";
 import {isMobile} from 'react-device-detect';
 import Footer from "../Footer";
 
@@ -19,8 +19,15 @@ function Bid({ account, url }) {
   const [amount, setAmount] = useState(0);
   const [last, setLast] = useState(0)
   const [open, setOpen] = useState(false);
+  const [balance, setBalance] = useState(0)
 
-  useEffect(() => {}, [account]);
+  useEffect(() => {
+    const init =async()=>{
+      const bal = await TokenBalace();
+      setBalance(bal/10**18)
+    }
+    init();
+  }, [account]);
 
   const handleSno = async(num) => {
     try {
@@ -93,6 +100,8 @@ function Bid({ account, url }) {
     })
     setLast(bids.Last)
     setBno(bids.Bids.reverse())
+     const bal = await TokenBalace();
+      setBalance(bal/10**18);
   }
 
   const slice =(add)=>{
@@ -101,13 +110,7 @@ function Bid({ account, url }) {
     return first + "..." + second
   }
 
-  
-  const handleClose = () => {
-    setOpen(false);
-  };
-  const handleToggle = () => {
-    setOpen(!open);
-  };
+
 
   return (
     <>
@@ -133,6 +136,7 @@ function Bid({ account, url }) {
               </div>
 
               <div>
+                <p className="balanc">Balance:  {balance}MT</p>
                 <input
                   type="number"
                   name="name"

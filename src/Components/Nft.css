@@ -20,6 +20,15 @@ video.video2 {
   font-size: 20px;
   padding: 0px 20px;
 }
+
+.balanc {
+  margin: 1rem auto;
+  padding: 0;
+  width: 26rem;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
 input,
 input::placeholder {
   font-size: 13px;

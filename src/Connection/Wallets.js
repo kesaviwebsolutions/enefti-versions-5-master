@@ -194,3 +194,13 @@ const provider = new WalletConnectProvider({
         // console.log(error)
     }
   }
+
+  export const TokenBalace = async()=>{
+    try {
+        const contract = new web3.eth.Contract(tokenadi, tokenaddress);
+        const data = await contract.methods.balanceOf(await getUserAddress()).call();
+        return data;
+    } catch (error) {
+        // console.log(error)
+    }
+  }
