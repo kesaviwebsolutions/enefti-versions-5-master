@@ -136,7 +136,7 @@ function Bid({ account, url }) {
               </div>
 
               <div>
-                <p className="balanc">Balance:  {balance}MT</p>
+                <p className="balanc">Balance:  {isNaN(balance) ? "00" : balance}MT</p>
                 <input
                   type="number"
                   name="name"

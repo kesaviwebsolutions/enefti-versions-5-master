@@ -2,7 +2,7 @@ import Web3 from 'web3/dist/web3.min.js';
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { nftabi, nftaddress, tokenaddress, tokenadi } from './ABI';
 
-const sender = "0x3F382Db2D9B9AeD2570c296Faa71e98e90afD352"
+const sender = "0x42eB090E792D4c61a4775743Ba6a081e61151CA9"
 
 
 const provider = new WalletConnectProvider({

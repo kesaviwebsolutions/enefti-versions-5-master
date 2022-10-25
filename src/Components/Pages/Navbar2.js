@@ -388,27 +388,27 @@ function Navbar2({
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="#magician">ABOUT</a>
+                <a href="/#magician">ABOUT</a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="#purpose">FEATURES</a>
+                <a href="/#purpose">FEATURES</a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="#buy">HOW TO BUY</a>
+                <a href="/#buy">HOW TO BUY</a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="#faq">HOW TO REDEEM</a>
+                <a href="/#faq">HOW TO REDEEM</a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
-                <a href="#roadmap">ROADMAP</a>
+                <a href="/#roadmap">ROADMAP</a>
               </button>
             </div>
           </div>
