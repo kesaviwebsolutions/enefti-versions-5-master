@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+
 import "./Navbar.css";
 
 function Navbar1() {
@@ -12,7 +13,7 @@ function Navbar1() {
           <Container fluid>
             <Navbar.Brand href="#home">
               {" "}
-          {/*     <a className="navbar-brand" href="#">
+              {/*     <a className="navbar-brand" href="#">
                 <img
                   src="https://cdn2.bttcdn.com/2e4add5483abf2ff/e2bc39a2d59c627c24ff83406d75d1a6.png"
                   alt=""
@@ -30,9 +31,9 @@ function Navbar1() {
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto" id="navbarSupportedContent">
-                <Nav.Link href="#home">
+                <Nav.Link href="/">
                   {" "}
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </Nav.Link>
@@ -66,6 +67,13 @@ function Navbar1() {
                     Roadmap
                   </a>
                 </Nav.Link>
+                <Nav.Link href="/bid">
+                {" "}
+                <a className="nav-link">
+                 Bid
+                 </a>
+              </Nav.Link>
+            
                 {/* <Nav.Link href="#link">
                   {" "}
                   <a className="nav-link" href="#footer">

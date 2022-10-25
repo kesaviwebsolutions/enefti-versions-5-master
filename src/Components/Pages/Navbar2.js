@@ -220,7 +220,7 @@ function Navbar2({
                 }}
                 style={{ padding: "7px 28px" }}
               >
-                {account ? slicewallet(account) : "Connect Wallet"}
+                {account ? slicewallet(account) : "Connect Wallet "}
               </Button>
             </div>
 

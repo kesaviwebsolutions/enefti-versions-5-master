@@ -122,7 +122,7 @@ td {
   margin-top: 2rem !important;
   float: right;
 }
-td {
+/* td {
   text-align: center !important;
 }
 td {
@@ -130,7 +130,7 @@ td {
   border-radius: 50%;
   border: none !important;
   padding: 10px !important;
-}
+} */
 .css-fikjyc-MuiTableCell-root-MuiTablePagination-root:last-child {
   background-color: transparent !important;
   border-radius: 0%;
