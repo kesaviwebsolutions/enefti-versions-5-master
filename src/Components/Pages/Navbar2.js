@@ -105,9 +105,27 @@ function Navbar2({
                   href="https://www.gcex.lt/register?redirect=/Orders"
                   target="_blank"
                 >
-                  Orders
+                  Order
                 </a>
               </li>
+              <li class="nav-item">
+              <a
+                class="nav-link "
+                href="https://earn.gcex.lt/"
+                target="_blank"
+              >
+            Swap
+              </a>
+            </li>
+            <li class="nav-item">
+            <a
+              class="nav-link "
+              href="https://earn.gcex.lt/staking"
+              target="_blank"
+            >
+          Staking
+            </a>
+          </li>
               <li class="nav-item">
                 <a
                   class="nav-link "
@@ -283,7 +301,7 @@ function Navbar2({
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://www.gcex.lt/Trade" target="_blank">
-                  TRADE
+                  Trade
                 </a>
               </button>
             </div>
@@ -293,7 +311,7 @@ function Navbar2({
                   href="https://www.gcex.lt/register?redirect=/Wallet"
                   target="_blank"
                 >
-                  WALLET
+                  Wallet
                 </a>
               </button>
             </div>
@@ -303,10 +321,30 @@ function Navbar2({
                   href="https://www.gcex.lt/register?redirect=/Orders"
                   target="_blank"
                 >
-                  ORDER
+                  Order
                 </a>
               </button>
             </div>
+            <div className="offcanvas-button">
+            <button className="offcanvas-button2">
+              <a
+                href="https://earn.gcex.lt/"
+                target="_blank"
+              >
+                Swap
+              </a>
+            </button>
+          </div>
+          <div className="offcanvas-button">
+          <button className="offcanvas-button2">
+            <a
+              href="https://earn.gcex.lt/staking"
+              target="_blank"
+            >
+             Staking
+            </a>
+          </button>
+        </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://www.gcex.lt/ieo" target="_blank">
@@ -324,14 +362,14 @@ function Navbar2({
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://www.goldchainex.com/news" target="_blank">
-                  FEATERED PRESS
+                  Featured Press
                 </a>
               </button>
             </div>
             <div className="offcanvas-button">
               <button className="offcanvas-button2">
                 <a href="https://trade.theunitedcapital.com/" target="_blank">
-               SPOT TRADING
+               Spot Trading
                 </a>
               </button>
             </div>
