@@ -33,14 +33,14 @@ export default function Home({ acount, url }) {
       <Nft url={url} account={acount} />
       {/* <Slider /> */}
       {/* <Main/> */}
-      {/* <Magician /> */}
+      <Magician />
       {/* <Toyslider /> */}
-      {/* <Purpose /> */}
+      <Purpose />
       <Numbers />
-      {/* <Holders /> */}
+      <Holders />
       <Timeline />
-      {/* <Horizontalroadmap />
-      <Faq /> */}
+      <Horizontalroadmap />
+      <Faq />
     </div>
   );
 }
