@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Holders from "../Holders";
 import Magician from "../Magician";
@@ -11,8 +11,7 @@ import Faq from "../Faq";
 import { GetChainId } from "../../Connection/Wallets";
 
 const url = "https://reffer.ap.ngrok.io";
-export default function Home({acount,url}) {
-
+export default function Home({ acount, url }) {
   useEffect(() => {
     const init = async () => {
       const id = await GetChainId();
@@ -27,22 +26,21 @@ export default function Home({acount,url}) {
 
     init();
   }, []);
-    
+
   return (
     <div>
       {" "}
       <Nft url={url} account={acount} />
       {/* <Slider /> */}
       {/* <Main/> */}
-      <Magician />
+      {/* <Magician /> */}
       {/* <Toyslider /> */}
-      <Purpose />
+      {/* <Purpose /> */}
       <Numbers />
-      <Holders />
+      {/* <Holders /> */}
       <Timeline />
-      <Horizontalroadmap />
-      <Faq />
-      <Footer />
+      {/* <Horizontalroadmap />
+      <Faq /> */}
     </div>
   );
 }

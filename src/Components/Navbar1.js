@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -33,47 +34,46 @@ function Navbar1() {
               <Nav className="ms-auto" id="navbarSupportedContent">
                 <Nav.Link href="/">
                   {" "}
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
                 </Nav.Link>
-                <Nav.Link href="#link">
+                <Nav.Link to="#link">
                   {" "}
-                  <a className="nav-link" href="#magician">
+                  <Link to="/magician" className="nav-link">
                     About
-                  </a>
+                  </Link>
                 </Nav.Link>
-                <Nav.Link href="#link">
+                <Nav.Link to="#link">
                   {" "}
-                  <a className="nav-link" href="#purpose">
+                  <Link className="nav-link" to="/purpose">
                     Features
-                  </a>
+                  </Link>
                 </Nav.Link>{" "}
-                <Nav.Link href="#link">
+                <Nav.Link to="#link">
                   {" "}
-                  <a className="nav-link" href="#buy">
+                  <Link className="nav-link" to="/buy">
                     How to Buy
-                  </a>
+                  </Link>
                 </Nav.Link>{" "}
-                <Nav.Link href="#link">
+                <Nav.Link to="#link">
                   {" "}
-                  <a className="nav-link" href="#faq">
+                  <Link className="nav-link" to="/faq">
                     How to Redeem
-                  </a>
+                  </Link>
                 </Nav.Link>
-                <Nav.Link href="#link">
+                <Nav.Link to="#link">
                   {" "}
-                  <a className="nav-link" href="#roadmap">
+                  <Link className="nav-link" to="/roadmap">
                     Roadmap
-                  </a>
+                  </Link>
                 </Nav.Link>
-                <Nav.Link href="/bid">
-                {" "}
-                <a className="nav-link">
-                 Bid
-                 </a>
-              </Nav.Link>
-            
+                <Nav.Link>
+                  {" "}
+                  <Link to="/bid" className="nav-link">
+                    Bid
+                  </Link>
+                </Nav.Link>
                 {/* <Nav.Link href="#link">
                   {" "}
                   <a className="nav-link" href="#footer">

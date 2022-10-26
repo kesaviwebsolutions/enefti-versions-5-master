@@ -162,7 +162,7 @@ ul li a:hover {
 }
 @media screen and (min-width: 992px) {
   .useful-link {
-    margin-left: 9rem !important;
+    margin-left: 1rem !important;
   }
   .footer-sociallinks {
     float: right;

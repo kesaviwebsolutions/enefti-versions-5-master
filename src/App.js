@@ -28,7 +28,7 @@ import Bid from "./Components/Pages/Bid";
 import Home from "./Components/Pages/Home";
 
 // const bidurl = "http://localhost:3032"
-const bidurl = "https://bid.ap.ngrok.io"
+const bidurl = "https://bid.ap.ngrok.io";
 
 function App() {
   const web3 = webProvide();
@@ -100,11 +100,16 @@ function App() {
           Dissconnect={Dissconnect}
         />
         <Navbar1 />
-
         <Routes>
           <Route path="/" element={<Home account={acount} />} />
-          <Route path="/bid" element={<Bid account={acount} url={bidurl}/>} />
+          <Route path="/bid" element={<Bid account={acount} url={bidurl} />} />
+          <Route path="/magician" element={<Magician />} />
+          <Route path="/purpose" element={<Purpose />} />
+          <Route path="/buy" element={<Holders />} />
+          <Route path="/roadmap" element={<Horizontalroadmap />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Footer() {
     >
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="col-lg-4 col-md-12">
+          {/* <div className="col-lg-6 col-md-12">
             <div className="footer-address-area">
               <h4>GCB Trust</h4>
               <p>
@@ -25,8 +25,8 @@ export default function Footer() {
                 Sweden
               </p>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-12 useful-link12">
+          </div> */}
+          <div className="col-lg-6 col-md-12 useful-link12">
             <div className="footer-address-area2 useful-link">
               <h4>Useful Links</h4>
               <ul>
@@ -53,7 +53,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-4 col-md-12">
+          <div className="col-lg-6 col-md-12">
             <div className="footer-sociallinks">
               <div className="fsl">
                 <a
