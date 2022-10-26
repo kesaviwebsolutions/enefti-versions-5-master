@@ -401,7 +401,7 @@ export const nftabi = [
 ////////////////////token//////////////////////////
 ////////////////////token//////////////////////////
 
-export const tokenaddress = "0x5bB38002CdA2b6F990b8F085Ac75a255DCBadABf";
+export const tokenaddress = "0x55d398326f99059fF775485246999027B3197955";
 export const tokenadi = [
   {
     inputs: [

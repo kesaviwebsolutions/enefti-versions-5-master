@@ -28,7 +28,7 @@ import Bid from "./Components/Pages/Bid";
 import Home from "./Components/Pages/Home";
 
 // const bidurl = "http://localhost:3032"
-const bidurl = "https://bid.in.ngrok.io"
+const bidurl = "https://bid.ap.ngrok.io"
 
 function App() {
   const web3 = webProvide();
@@ -42,12 +42,12 @@ function App() {
       }
       const id = await GetChainId();
       console.log("Chain ID is ", id);
-      if (Number(id) != 1) {
-        await window.ethereum.request({
-          method: "wallet_switchEthereumChain",
-          params: [{ chainId: "0x1" }], // chainId must be in hexadecimal numbers
-        });
-      }
+      // if (Number(id) != 1) {
+      //   await window.ethereum.request({
+      //     method: "wallet_switchEthereumChain",
+      //     params: [{ chainId: "0x1" }], // chainId must be in hexadecimal numbers
+      //   });
+      // }
     };
 
     init();

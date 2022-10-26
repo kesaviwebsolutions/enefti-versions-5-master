@@ -6,7 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import "./Bid.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import { TokenSend, TokenBalace } from "../../Connection/Wallets";
+import { TokenSend, TokenBalace, GetChainId } from "../../Connection/Wallets";
 import {isMobile} from 'react-device-detect';
 import Footer from "../Footer";
 
@@ -28,6 +28,21 @@ function Bid({ account, url }) {
     }
     init();
   }, [account]);
+
+  useEffect(() => {
+    const init = async () => {
+      const id = await GetChainId();
+      console.log("Chain ID is ", id);
+      if (Number(id) != 56) {
+        await window.ethereum.request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: "0x38" }], // chainId must be in hexadecimal numbers
+        });
+      }
+    };
+
+    init();
+  }, []);
 
   const handleSno = async(num) => {
     try {
