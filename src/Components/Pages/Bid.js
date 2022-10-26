@@ -15,7 +15,7 @@ const notify = (msg) => toast.success(msg);
 
 function Bid({ account, url }) {
   const [bno, setBno] = useState();
-  const [bidno, setBidno] = useState(0)
+  const [bidno, setBidno] = useState()
   const [amount, setAmount] = useState(0);
   const [last, setLast] = useState(0)
   const [open, setOpen] = useState(false);
@@ -46,6 +46,9 @@ function Bid({ account, url }) {
 
   const handleSno = async(num) => {
     try {
+      if(Number(num) > 1000){
+        return true;
+      }
       setBidno(Number(num))
       const BNO = Number(num)
       const bids = await axios.post(`${url}/isbid`,{
@@ -155,6 +158,7 @@ function Bid({ account, url }) {
                 <input
                   type="number"
                   name="name"
+                  value={bidno}
                   onChange={(e)=>handleSno(e.target.value)}
                   placeholder="S. No"
                   className="text23"
