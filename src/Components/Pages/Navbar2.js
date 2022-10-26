@@ -411,6 +411,11 @@ function Navbar2({
                 <a href="/#roadmap">ROADMAP</a>
               </button>
             </div>
+            <div className="offcanvas-button">
+              <button className="offcanvas-button2">
+                <a href="/bid">BID</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
