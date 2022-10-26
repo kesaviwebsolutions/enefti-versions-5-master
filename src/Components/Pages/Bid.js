@@ -151,7 +151,8 @@ function Bid({ account, url }) {
                     Last bid amount was ${isNaN(last) ? "000" : last}
                     <br />
                     <p style={{ fontSize: "13px", color: "#fcf525" }}>
-                      (Minimum increment is $30 on last highest bid amount)
+                      (Minimum increment is $30 on the last highest bid amount. If the last bid
+                      amount was X, then you need to bid at least X + $30 or above.)
                     </p>
                   </p>
                 </div>
@@ -159,7 +160,7 @@ function Bid({ account, url }) {
 
               <div>
                 <p className="balanc">
-                  Balance: {isNaN(balance) ? "00" : balance} USDT
+                  Your Balance: {isNaN(balance) ? "00" : balance} USDT
                 </p>
                 <input
                   type="text"
