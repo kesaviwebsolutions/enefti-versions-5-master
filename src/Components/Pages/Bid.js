@@ -162,7 +162,7 @@ function Bid({ account, url }) {
                   Balance: {isNaN(balance) ? "00" : balance} USDT
                 </p>
                 <input
-                  type="number"
+                  type="text"
                   name="name"
                   value={bidno}
                   onChange={(e) => handleSno(e.target.value)}
@@ -170,7 +170,7 @@ function Bid({ account, url }) {
                   className="text23"
                 />
                 <input
-                  type="number"
+                  type="text"
                   name="name"
                   onChange={(e) => setAmount(Number(e.target.value))}
                   placeholder="amount"
