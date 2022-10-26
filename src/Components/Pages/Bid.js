@@ -185,10 +185,11 @@ function Bid({ account, url }) {
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+              <h3>List of Bidders</h3>
               <Table striped bordered hover style={{ marginTop: "2rem" }}>
                 <thead>
                   <tr>
-                    <th>S N0</th>
+                    <th>Rank</th>
                     <th>WALLET</th>
                     {/* <th>BID TIME</th> */}
                     <th>BID AMOUNT</th>
