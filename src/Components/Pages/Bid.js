@@ -159,7 +159,7 @@ function Bid({ account, url }) {
 
               <div>
                 <p className="balanc">
-                  Balance: {isNaN(balance) ? "00" : balance}MT
+                  Balance: {isNaN(balance) ? "00" : balance} USDT
                 </p>
                 <input
                   type="number"
