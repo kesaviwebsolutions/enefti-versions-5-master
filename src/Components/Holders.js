@@ -26,7 +26,7 @@ export default function Holders() {
                   <Accordion.Header>Where to Mint?</Accordion.Header>
                   <Accordion.Body>
                     visit &nbsp;
-                    <a href="nft.gcex.lt" className="cc">
+                    <a href="https://nft.gcex.lt" className="cc">
                       nft.gcex.lt&nbsp;
                     </a>
                     .Input your desired serial number of the XAUS NFT you wish
