@@ -82,7 +82,7 @@ function Bid({ account, url }) {
         return true;
       }
       if (last + 30 > amount) {
-        warn("Entered amount should be greater than last bit amount");
+        warn("Entered amount should be greater than last bid amount");
         return true;
       }
       setOpen(true);
